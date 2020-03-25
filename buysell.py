@@ -1,10 +1,11 @@
 import matplotlib.pyplot as plt
 import numpy as np
-#from scipy.signal import argrelextrema
+
+
+################################## Create mock data #################################
+
 
 N_FEATURES = 1
-
-##########################################################
 
 def generate_time_series(batch_size, n_steps):
     freq1, freq2, offsets1, offsets2 = np.random.rand(4,batch_size,1)
@@ -15,17 +16,16 @@ def generate_time_series(batch_size, n_steps):
     series = np.repeat(series.reshape(batch_size,n_steps,1), N_FEATURES, axis=2) # adds a third dimension for features
     return series.astype(np.float32)
 
-##########################################################
-
-# Create mock data
 num_steps = 100
 x1,x2 = generate_time_series(2,num_steps)
 array = x1[:num_steps,0]
 l = num_steps
 
-#array = np.convolve(array)
 
-# Find local minma/maxima (very specific)
+#####################################################################################
+
+
+# Find local minima/maxima (very specific)
 buy = np.r_[True, array[1:] < array[:-1]] & np.r_[array[:-1] < array[1:], True]
 sell = np.r_[True, array[1:] > array[:-1]] & np.r_[array[:-1] > array[1:], True]
 
@@ -41,45 +41,77 @@ for x in range (0, l):
         dec[x] = -1
         decval[x] = array[x]
 
-# Get rid of volatile values
-for x in range (0, l-2):
-    # Two points next to each other -> get rid of both
-    # There doesn't exist a case where this will be true while also including a local maxima/minima
+# Ensures that the last signal is to sell
+if dec[-1] == 1:
+    dec[-1] = 0
+
+# Ensures that the first signal is to buy
+if dec[0] == -1:
+    dec[0] = 0
+
+
+###################### Get rid of volatile and redundant values ####################
+
+
+# If there are 3 points close together with zeros on either side -> best of edges remains
+for x in range (2,l-2):
+    if dec[x-2] == 0 and dec[x-1] != 0 and dec[x] != 0 and dec[x+1] != 0 and dec[x+2] == 0:
+        if (dec[x] == 1 and decval[x-1] > decval[x+1]) or (dec[x] == -1 and decval[x-1] < decval[x+1]):
+            dec[x+1] = 0
+        else:
+            dec[x-1] = 0
+        dec[x] = 0
+
+
+# If there are 2 points close together with zeros on either side -> make both zero
+# Impossible to be a local maxima/minima
+for x in range (1,l-2):
     if dec[x-1] == 0 and dec[x] != 0 and dec[x+1] != 0 and dec[x+2] == 0:
         dec[x] = 0
         dec[x+1] = 0
-        decval[x] = 0
-        decval[x+1] = 0
-    # Three points by close together and by themselves -> keep one
-    # Middle point is a local minima:
-    if dec[x-1] == 1 and dec[x] == -1 and dec[x+1] == 1:
-        dec[x] = 0
-        decval[x] = 0
-        if decval[x-1] < decval[x+1]:
-            dec[x+1] = 0
-            decval[x+1] = 0
-        else:
-            dec[x-1] = 0
-            decval[x-1] = 0
-    # Middle point is a local maxima:
-    if dec[x-1] == -1 and dec[x] == 1 and dec[x+1] == -1:
-        dec[x] = 0
-        decval[x] = 0
-        if decval[x-1] > decval[x+1]:
-            dec[x+1] = 0
-            decval[x+1] = 0
-        else:
-            dec[x-1] = 0
-            decval[x-1] = 0
 
-# Get rid of redundant points
-# Still to complete
-diff = np.diff(decval)
+if dec[0] != 0 and dec[1] != 0 and dec[2] == 0:
+    dec[0] = 0
+    dec[1] = 0
 
-# Ensure that the first signal is buy and that the final signal is sell
-# Still to complete
+if dec[-1] != 0 and dec[-2] != 0 and dec[-3]== 0:
+    dec[-1] = 0
+    dec[1] = 0
 
-# Plot
+#np.split(array, np.where(np.diff(copy))[0]+1)
+
+# copy = np.copy(dec)
+# mask = copy != 0
+# copy[mask] = 1
+# change = np.diff(copy)
+# diff = 0.01
+#
+# print(dec)
+# print(change)
+#
+# # -1 signals end, +1 signals start
+# start = 0
+# end = 100
+# startindex = -1
+# endindex = -1
+# for x in range (0,l-1):
+#     if change[x] == 1:
+#         start = decval[x+1]
+#         startindex = x + 1
+#     if change[x] == -1:
+#         end = decval[x+1]
+#         endindex = x + 1
+#         if abs(end - start) < diff:
+#             dec[startindex:endindex] = 0
+#         start = 0
+#         end = 100
+#
+# print(dec)
+
+
+###################################### Plot data ###################################
+
+# Plot the buy/sell signals
 for x in range (0, l):
     if dec[x] == 1:
         plt.scatter(x,array[x], c='green')
