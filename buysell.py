@@ -17,11 +17,11 @@ def determine_buy_sell(prediction, n_steps, sensitivity):
         if sell[x] == True:
             signs[x] = -1
 
-    # Ensures that the last signsal is to sell
+    # Ensures that the last signal is to sell
     if signs[-1] == 1:
         signs[-1] = 0
 
-    # Ensures that the first signsal is to buy
+    # Ensures that the first signal is to buy
     if signs[0] == -1:
         signs[0] = 0
 
@@ -131,7 +131,7 @@ def determine_buy_sell(prediction, n_steps, sensitivity):
     signals = signals.astype(int)
     indices = indices.astype(int)
 
-    # PROBLEM: Sometimes we start with an end signsal and miss a start signsal
+    # PROBLEM: Sometimes we start with an end signal and miss a start signal
     # This tries to deal with that:
     if signals[0] == -1:
         max = np.argmax(prediction[:indices[0]+1])
@@ -252,6 +252,6 @@ plot_signals(array,signs)
 
 # Next steps: adapt for a changing graph for when the days move forward and we gather more data
 
-# Currently, I make sure that the first signsal is always to buy - this needs to be changed for
-# all day graphs after the first buy signsal has been created. Needs to enforce alternation after
+# Currently, I make sure that the first signal is always to buy - this needs to be changed for
+# all day graphs after the first buy signal has been created. Needs to enforce alternation after
 # this point.
