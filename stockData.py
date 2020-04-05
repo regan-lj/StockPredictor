@@ -14,25 +14,25 @@ import numpy as np
 import yfinance as yf
 import matplotlib.pyplot as plt
 
-# ######################################## INPUT HERE #################################################################
+# ####################################### -INPUT HERE- #################################################################
 
 # define period: common options would include ‘1d’ (daily), ‘1mo’ (monthly), ‘1y’ (yearly)
 timeSteps = "1mo"
 
 # define start: the date to start gathering the data. For example ‘2010–1–1’
-startDate = '2010-1-01'
+startDate = '2015-1-01'
 
 # define end: the date to end gathering the data. For example ‘2020–1–25’
-endDate = '2020-03-21'
+endDate = '2020-03-3'
 
 # define the ticker symbol
 tickerSymbols = ["SPY", "AAPL", "AMZN", "TSLA", "GOOGL", "BAC"]
-tickerFeatures = ["Open", "High", "Low", "Close", "Volume"]
+tickerFeatures = ["Volume", "Open", "High", "Low", "Close"]
 
 # Plot data or not
 plotdata = 0
 
-# #####################################################################################################################
+# ########################################  -DATA DOWNLOAD- ############################################################
 
 # Download data. This is taken from https://pypi.org/project/yfinance/
 stockData = yf.download(  # or pdr.get_data_yahoo(...
@@ -84,32 +84,53 @@ if plotdata:
         plt.title(["Volume of stocks for ", symbol])
         plt.show()
 
-# See your data. Output is  [Open        High         Low       Close     Volume]
-print(stockData)
+# See your data. Output is  [Volume     Open        High         Low       Close ]
+#print(stockData)
 
 # Convert data to np.array, and then to the right format
 np_stockData = np.array(stockData)
 
-N_TIMESTEPS = np_stockData.shape[0]
-N_COMPANIES = len(tickerSymbols)
-N_FEATURES = int(np_stockData.shape[0]/N_COMPANIES)
+# Primary numbers
+N_TIMESTEPS = np_stockData.shape[0]                                                     # = 1300
+N_COMPANIES = len(tickerSymbols)                                                        # = 6
+N_FEATURES = int(np_stockData.shape[1]/N_COMPANIES)                                     # = 5
+N_TIMESTEPS_PER_BATCH = 100                                                             # = 100
+N_BATCHES = int(np.floor(N_TIMESTEPS/N_TIMESTEPS_PER_BATCH))                            # = 13
 
-np_stockData_resh = np.zeros([N_COMPANIES, N_TIMESTEPS, N_FEATURES])
+stockDataFinal = np.zeros([N_BATCHES, N_TIMESTEPS_PER_BATCH, N_FEATURES*N_COMPANIES])
 
-icounter = 0
-for company in tickerSymbols:
-    kcounter = 0
-    for feature in tickerFeatures:
-        np_stockData_resh[icounter, :, kcounter] = np.array(stockData[company, feature])
-        kcounter += 1
-    icounter += 1
+feature_counter = 0
+for feature in tickerFeatures:
+    company_counter = 0
+    for company in tickerSymbols:
+        my_data = np.array(stockData[company, feature])
+        for current_batch in range(0, N_BATCHES):
+            timeSlot = N_TIMESTEPS_PER_BATCH*current_batch
+            stockDataFinal[current_batch, :, feature_counter*N_COMPANIES+company_counter] = my_data[timeSlot:timeSlot+N_TIMESTEPS_PER_BATCH]
+        company_counter += 1
+    feature_counter += 1
 
-#  Example of how to access data for company nr 1 and feature nr 2:
-print(np_stockData_resh[1, :, 2])
+# ##################################### -OUTPUT HERE- ##################################################################
 
+# This is the output np.array, in the form [BATCH_SIZE, N_TIMESTEPS_PER_BATCH, N_FEATURES*N_COMPANIES] = [13, 100, 5*6]
+print(stockDataFinal)
 
+# Chose output feature between 1-5 (5 is the last feature which is closing price)
+my_feature = 5
 
-#  ----------- Other stuff from https://towardsdatascience.com/how-to-get-stock-data-using-python-c0de1df17e75
+# Chose company 1-6 in the list of ticker symbols above
+my_company = 6
+
+# Chose time interval (the batch) between 1 and 13. Batch 13 is the most recent 100 data points.
+my_batch = 13
+
+# Print the part of the data chosen
+print(stockDataFinal[my_batch-1, :, (my_feature-1)*N_COMPANIES+my_company-1])
+
+# Now, just save and export stockDataFinal
+
+# ----------------------------------------------------------------------------------------------------------------------
+#  Other stuff from https://towardsdatascience.com/how-to-get-stock-data-using-python-c0de1df17e75
 # get data on this ticker
 # tickerData = yf.Ticker(tickerSymbols)
 # get the historical prices for this ticker
