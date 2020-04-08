@@ -17,7 +17,7 @@ import matplotlib.pyplot as plt
 # ####################################### -INPUT HERE- #################################################################
 
 # define period: common options would include ‘1d’ (daily), ‘1mo’ (monthly), ‘1y’ (yearly)
-timeSteps = "1mo"
+timeSteps = "1d"
 
 # define start: the date to start gathering the data. For example ‘2010–1–1’
 startDate = '2015-1-01'
@@ -26,11 +26,21 @@ startDate = '2015-1-01'
 endDate = '2020-03-3'
 
 # define the ticker symbol
-tickerSymbols = ["SPY", "AAPL", "AMZN", "TSLA", "GOOGL", "BAC"]
+tickerSymbols = ["DELL", "ADBE", "T", "FB", "STM", "BABA", "IAC", "RUBI", "MSFT",  "WUBA"]
 tickerFeatures = ["Volume", "Open", "High", "Low", "Close"]
+tickerNames = {"DELL": "DELL Technologies Inc",
+               "ADBE": "Adobe Inc",
+               "T": "AT&T, Inc.",
+               "FB": "Facebook Inc",
+               "STM": "ST Microelectronics",
+               "BABA": "Alibaba Group Holding Ltd",
+               "IAC": "IAC InterActiveCorp",
+               "RUBI": "Rubicon Project Inc",
+               "MSFT": "Microsoft Corporation",
+               "WUBA": "58.com Inc"}
 
 # Plot data or not
-plotdata = 0
+plotdata = 1
 
 # ########################################  -DATA DOWNLOAD- ############################################################
 
@@ -76,12 +86,12 @@ if plotdata:
         stockData[symbol, 'Close'].plot()
         stockData[symbol, 'High'].plot()
         stockData[symbol, 'Low'].plot()
-        plt.title(['Stock price for', symbol])
+        plt.title("".join(["Stock price for ", tickerNames[symbol]]))
         plt.legend(["Open", "Close", "High", "Low"])
         plt.show()
 
         stockData[symbol, 'Volume'].plot()
-        plt.title(["Volume of stocks for ", symbol])
+        plt.title("".join(["Volume of stocks for ", tickerNames[symbol]]))
         plt.show()
 
 # See your data. Output is  [Volume     Open        High         Low       Close ]
@@ -118,8 +128,8 @@ print(stockDataFinal)
 # Chose output feature between 1-5 (5 is the last feature which is closing price)
 my_feature = 5
 
-# Chose company 1-6 in the list of ticker symbols above
-my_company = 6
+# Chose company 1-10 in the list of ticker symbols above
+my_company = 10
 
 # Chose time interval (the batch) between 1 and 13. Batch 13 is the most recent 100 data points.
 my_batch = 13
