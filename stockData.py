@@ -26,9 +26,9 @@ startDate = '2015-1-01'
 endDate = '2020-03-3'
 
 # define the ticker symbol
-tickerSymbols = ["DELL", "ADBE", "T", "FB", "STM", "BABA", "IAC", "RUBI", "MSFT",  "WUBA"]
-tickerFeatures = ["Volume", "Open", "High", "Low", "Close"]
-tickerNames = {"DELL": "DELL Technologies Inc",
+tickerSymbols = ["WUBA", "GOOGL", "ADBE", "T", "FB", "STM", "BABA", "IAC", "RUBI", "MSFT"]
+tickerFeatures = ["Open", "High", "Low", "Close", "Volume"]
+tickerNames = {"GOOGL": "Alphabet Inc",
                "ADBE": "Adobe Inc",
                "T": "AT&T, Inc.",
                "FB": "Facebook Inc",
@@ -40,7 +40,7 @@ tickerNames = {"DELL": "DELL Technologies Inc",
                "WUBA": "58.com Inc"}
 
 # Plot data or not
-plotdata = 1
+plotdata = 0
 
 # ########################################  -DATA DOWNLOAD- ############################################################
 
@@ -94,7 +94,7 @@ if plotdata:
         plt.title("".join(["Volume of stocks for ", tickerNames[symbol]]))
         plt.show()
 
-# See your data. Output is  [Volume     Open        High         Low       Close ]
+# See your data. Output is  [Open        High         Low       Close    Volume]
 #print(stockData)
 
 # Convert data to np.array, and then to the right format
@@ -125,17 +125,25 @@ for feature in tickerFeatures:
 # This is the output np.array, in the form [BATCH_SIZE, N_TIMESTEPS_PER_BATCH, N_FEATURES*N_COMPANIES] = [13, 100, 5*6]
 print(stockDataFinal)
 
-# Chose output feature between 1-5 (5 is the last feature which is closing price)
-my_feature = 5
+# Chose output feature between 1-5 (1 is the first feature which is opening price)
+my_feature = 1
 
 # Chose company 1-10 in the list of ticker symbols above
-my_company = 10
+my_company = 1
 
 # Chose time interval (the batch) between 1 and 13. Batch 13 is the most recent 100 data points.
 my_batch = 13
 
 # Print the part of the data chosen
 print(stockDataFinal[my_batch-1, :, (my_feature-1)*N_COMPANIES+my_company-1])
+
+# Check data for nan
+for batch in stockDataFinal:
+    for timestep in batch:
+        for data in timestep:
+            if np.isnan(data):
+                print("DATA CONTAINS NAN VALUES")
+
 
 # Now, just save and export stockDataFinal
 
