@@ -1,11 +1,19 @@
 """
-Gives each day a buy/sell/hold signal.
+Export final_result: a numpy array with stock prices in the first row and the corresponding signals in the second row.
+Until I have it set up for the ML, line 295 can be altered to change the stock.
 
-This result is used to determine whether we should buy or sell at a given date, with a given degree of uncertainty.
+Signals
+----------
+     1: buy
+    -1: sell
+     0: hold
 """
 
 import matplotlib.pyplot as plt
 import numpy as np
+from stockData import stockDataFinal,my_feature,my_company,my_batch,N_COMPANIES
+
+sensitivity = 4
 
 def determine_maxima_minima(data, num_steps, sensitivity):
     """
@@ -19,7 +27,8 @@ def determine_maxima_minima(data, num_steps, sensitivity):
     num_steps : int
         The size of data
     sensitivity : int
-        The period of time over which we want to use this model
+        How susceptible the buy/sell signals are to changes in price
+        # 4 was ideal for mock data - may need to change with real data
 
     Returns
     -------
@@ -261,17 +270,12 @@ def generate_signals(data, signs, present_index, stage, span):
         return False
 
 
-def plot_signals(data, length, signs, present_index, stage, span):
+def plot_signals(data, length, signs):
     """
     Here only for visual representation.
-    NOTE: Might try to expand so that it can be used in the dynamic version.
     """
 
     plt.clf()
-
-    plt.axvline(x=present_index-span, ymin=-1, ymax=1, c='red', ls='--')
-    plt.axvline(x=present_index+span, ymin=-1, ymax=1, c='red', ls='--')
-    plt.axvline(x=present_index, ymin=-1, ymax=1, c='black', ls='--')
 
     for x in range (0, length):
         if signs[x] == 1:
@@ -283,3 +287,17 @@ def plot_signals(data, length, signs, present_index, stage, span):
     plt.ylabel('stock price')
     plt.xlabel('day')
     plt.show()
+
+
+############################## Putting it all together ############################
+
+# This will be changed to be the output of the machine learning:
+prediction = stockDataFinal[my_batch-3, :, (my_feature-1)*N_COMPANIES+my_company-1]
+num_predictions = 100
+
+signs = determine_maxima_minima(prediction, num_predictions, sensitivity)
+final_result = np.arange(2*num_predictions).reshape(2,num_predictions)
+final_result[0,:] = prediction
+final_result[1,:] = signs
+
+plot_signals(prediction, num_predictions, signs)

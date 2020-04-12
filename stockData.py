@@ -123,7 +123,7 @@ for feature in tickerFeatures:
 # ##################################### -OUTPUT HERE- ##################################################################
 
 # This is the output np.array, in the form [BATCH_SIZE, N_TIMESTEPS_PER_BATCH, N_FEATURES*N_COMPANIES] = [13, 100, 5*6]
-print(stockDataFinal)
+# print(stockDataFinal)
 
 # Chose output feature between 1-5 (1 is the first feature which is opening price)
 my_feature = 1
@@ -135,7 +135,7 @@ my_company = 1
 my_batch = 13
 
 # Print the part of the data chosen
-print(stockDataFinal[my_batch-1, :, (my_feature-1)*N_COMPANIES+my_company-1])
+# print(stockDataFinal[my_batch-1, :, (my_feature-1)*N_COMPANIES+my_company-1])
 
 # Check data for nan
 for batch in stockDataFinal:
