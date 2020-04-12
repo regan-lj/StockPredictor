@@ -232,44 +232,6 @@ def determine_maxima_minima(data, num_steps, sensitivity):
     return signs
 
 
-def generate_signals(data, signs, present_index, stage, span):
-    """
-    Determines if we should buy/hold/sell on a given day.
-
-    Parameters
-    ----------
-    data : float array
-        A matrix containing the stock price at each day
-    signs : int array
-        Buy/sell/hold signals at each index
-    present_index : int
-        After present_index, every stock price is a prediction
-    stage : int
-        Tells us if we should be looking for a buy signal or a sell signal
-        +1 means buy, -1 means sell
-    span : int
-        The range over which we want to look for buy/sell signals
-
-    Returns
-    -------
-    A boolean value - TRUE indicates we buy/sell, FALSE indicates we sell.
-    """
-
-    #scope = data[present_index - span : present_index + span + 1]
-    signs_scope = signs[present_index - span : present_index + span + 1]
-
-    # the second condition ideally is not needed, need to make sure
-    # determine_maxima_minima is working as required
-    if stage in signs_scope and -1*stage not in signs_scope:
-        if stage == 1:
-            print("Buy")
-        else:
-            print("Sell")
-        return True
-    else:
-        return False
-
-
 def plot_signals(data, length, signs):
     """
     Here only for visual representation.
