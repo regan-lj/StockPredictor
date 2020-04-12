@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 from statsmodels.tsa.stattools import adfuller
-from stockData import np_stockData_resh
+from stockData import stockDataFinal as np_stockData_resh
 
 def time_differencing(series):
     """ Rather than considering the index directly, we are calculating

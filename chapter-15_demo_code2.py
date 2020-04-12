@@ -2,24 +2,35 @@ import tensorflow as tf
 import tensorflow.keras as keras
 import numpy as np
 import matplotlib.pyplot as plt
-from stockdata import stockDataFinal as stockData
+from stockData import stockDataFinal as targetData
+from data_preprocess import series as inputData
+stockDataFinal = targetData
 
-N_STEPS = 100
-INITIAL_BATCH_SIZE = 1000
+print(stockDataFinal)
+
+N_STEPS = stockDataFinal.shape[1]
+INITIAL_BATCH_SIZE = stockDataFinal.shape[0]
 N_PREDICTIONS = 25 # denoted by m in the pydocs
-N_INPUT_FEATURES = 3
+N_INPUT_FEATURES = 10
 N_OUTPUT_FEATURES = 1
 # data format: (dimension 1, dimension 2, dimension 3) = (BATCH_SIZE, N_TIME_STEPS, N_INPUT_FEATURES)
 
-TRAINING_BATCH_SIZE = 8
-VALIDATION_BATCH_SIZE = 3
-TESTING_BATCH_SIZE = 1
+TRAINING_BATCH_SIZE = 7
+VALIDATION_BATCH_SIZE = 4
+TESTING_BATCH_SIZE = 2
 N_INPUT_STEPS = N_STEPS - N_PREDICTIONS # denoted by n in the pydocs
 
-N_EPOCHS = 20
+N_EPOCHS = 50 #CAN_CHANGE_THIS
 
 assert INITIAL_BATCH_SIZE == TRAINING_BATCH_SIZE + VALIDATION_BATCH_SIZE + TESTING_BATCH_SIZE
 assert N_OUTPUT_FEATURES <= N_INPUT_FEATURES
+
+stockDataFinal[:,:N_INPUT_STEPS,:] = inputData[:,:N_INPUT_STEPS,:]
+#remove NAN features
+stockDataFinal = stockDataFinal[:,:,1:9]
+#get desired features
+stockDataFinal = stockDataFinal[:,:,1:1+N_INPUT_FEATURES]
+print(stockDataFinal.shape)
 
 ####################################################################################################################################################################
 
@@ -110,7 +121,7 @@ def get_sequence_to_sequence_rnn_model(output_shape=N_PREDICTIONS*N_OUTPUT_FEATU
 def train_sequence_to_sequence_rnn_model(model,x_train,y_train,x_valid,y_valid):
     optimizer = keras.optimizers.Adam(lr=0.01)
     model.compile(loss="mse",optimizer=optimizer, metrics=[last_time_step_mse])
-    training_history = model.fit(x_train,y_train,epochs=N_EPOCHS,validation_data=(x_valid,y_valid),verbose=0)
+    training_history = model.fit(x_train,y_train,epochs=N_EPOCHS,validation_data=(x_valid,y_valid),verbose=1)
     return training_history
     
 ######################################################################### BASELINE METRICS #########################################################################
@@ -125,6 +136,9 @@ def naive_forecasting(x_valid, y_valid):
         RETURNS
              MSE of target data and naive prediction"""
     y_pred = np.concatenate([x_valid[:,-1].reshape((VALIDATION_BATCH_SIZE,1,N_INPUT_FEATURES)) for x in range(N_PREDICTIONS)],axis=1)
+    y_pred = y_pred[:,:,:N_OUTPUT_FEATURES]
+    print("valid = ", y_valid.shape)
+    print("pred = ", y_pred.shape)
     return np.mean(keras.losses.mean_squared_error(y_valid,y_pred)), y_pred
 
 def linear_regression_forecasting(x_train,y_train,x_valid,y_valid):
@@ -306,7 +320,8 @@ def cnn_vector_forecasting(x_train,x_valid,series,indices):
 
 indices = (TRAINING_BATCH_SIZE,TRAINING_BATCH_SIZE+VALIDATION_BATCH_SIZE)
 
-series = generate_time_series(INITIAL_BATCH_SIZE, N_STEPS)
+#series = generate_time_series(INITIAL_BATCH_SIZE, N_STEPS)
+series = stockDataFinal
 x_train, y_train = series[:indices[0], :N_INPUT_STEPS], series[:indices[0], -N_PREDICTIONS:, :N_OUTPUT_FEATURES]
 x_valid, y_valid = series[indices[0]:indices[1], :N_INPUT_STEPS], series[indices[0]:indices[1], -N_PREDICTIONS:, :N_OUTPUT_FEATURES]
 x_test, y_test = series[indices[1]:, :N_INPUT_STEPS], series[indices[1]:, -N_PREDICTIONS:, :N_OUTPUT_FEATURES]
@@ -319,10 +334,12 @@ naive_loss, pred = naive_forecasting(x_valid, y_valid)
 print("naive forecasting loss: ", naive_loss)
 pltr.plot(pred,"naive prediction",VALIDATION_BATCH_SIZE)
 
+"""
 linear_model_history, pred = linear_regression_forecasting(x_train,y_train,x_valid,y_valid)
 linear_loss = linear_model_history['val_loss'][-1] 
 print("linear regression forecasting loss: ", linear_loss)
 pltr.plot(pred,"linear prediction",VALIDATION_BATCH_SIZE)
+"""
 
 rnn_iterative_loss, pred = rnn_iterative_forecasting(x_train,y_train,x_valid,y_valid) 
 print("deep rnn iterative forecasting loss: ", rnn_iterative_loss)

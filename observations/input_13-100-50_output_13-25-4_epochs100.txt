@@ -1,0 +1,7 @@
+linear regression forecasting loss:  		246045019734016.0
+deep rnn iterative forecasting loss:  		12001605671793.375
+deep rnn vector forecasting loss:  		12001635991552.0
+deep rnn sequence forecasting loss:  		11456979402752.0
+deep rnn lstm sequence forecasting loss:  	11456969965568.0
+deep rnn gru sequence forecasting loss:  	11456974159872.0
+cnn vector forecasting loss:  			8611151478784.0
