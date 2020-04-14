@@ -20,7 +20,7 @@ import matplotlib.pyplot as plt
 timeSteps = "1d"
 
 # define start: the date to start gathering the data. For example ‘2010–1–1’
-startDate = '2015-1-01'
+startDate = '2014-10-20'
 
 # define end: the date to end gathering the data. For example ‘2020–1–25’
 endDate = '2020-03-3'
@@ -101,11 +101,11 @@ if plotdata:
 np_stockData = np.array(stockData)
 
 # Primary numbers
-N_TIMESTEPS = np_stockData.shape[0]                                                     # = 1300
-N_COMPANIES = len(tickerSymbols)                                                        # = 6
+N_TIMESTEPS = np_stockData.shape[0]                                                     # = 1350
+N_COMPANIES = len(tickerSymbols)                                                        # = 10
 N_FEATURES = int(np_stockData.shape[1]/N_COMPANIES)                                     # = 5
-N_TIMESTEPS_PER_BATCH = 100                                                             # = 100
-N_BATCHES = int(np.floor(N_TIMESTEPS/N_TIMESTEPS_PER_BATCH))                            # = 13
+N_TIMESTEPS_PER_BATCH = 150                                                             # = 150
+N_BATCHES = int(np.floor(N_TIMESTEPS/N_TIMESTEPS_PER_BATCH))                            # = 9
 
 stockDataFinal = np.zeros([N_BATCHES, N_TIMESTEPS_PER_BATCH, N_FEATURES*N_COMPANIES])
 
@@ -122,9 +122,9 @@ for feature in tickerFeatures:
 
 # ##################################### -OUTPUT HERE- ##################################################################
 
-# This is the output np.array, in the form [BATCH_SIZE, N_TIMESTEPS_PER_BATCH, N_FEATURES*N_COMPANIES] = [13, 100, 5*6]
+# This is the output np.array, in the form [BATCH_SIZE, N_TIMESTEPS_PER_BATCH, N_FEATURES*N_COMPANIES] = [9, 150, 5*10]
 
-print(stockDataFinal.shape)
+# print(stockDataFinal)
 
 # Chose output feature between 1-5 (1 is the first feature which is opening price)
 my_feature = 1
@@ -132,8 +132,8 @@ my_feature = 1
 # Chose company 1-10 in the list of ticker symbols above
 my_company = 1
 
-# Chose time interval (the batch) between 1 and 13. Batch 13 is the most recent 100 data points.
-my_batch = 13
+# Chose time interval (the batch) between 1 and 9. Batch 9 is the most recent 100 data points.
+my_batch = 9
 
 # Print the part of the data chosen
 # print(stockDataFinal[my_batch-1, :, (my_feature-1)*N_COMPANIES+my_company-1])
@@ -145,8 +145,7 @@ for batch in stockDataFinal:
             if np.isnan(data):
                 print("DATA CONTAINS NAN VALUES")
 
-
-#print(stockDataFinal[my_batch-1, :, (my_feature-1)*N_COMPANIES+my_company-1])
+print(stockDataFinal[my_batch-1, :, (my_feature-1)*N_COMPANIES+my_company-1])
 
 # Now, just save and export stockDataFinal
 
@@ -162,3 +161,4 @@ for batch in stockDataFinal:
 
 # get recommendation data for ticker
 # tickerRec = tickerData.recommendations
+
