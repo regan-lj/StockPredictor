@@ -1,3 +1,4 @@
 Conclusions:
 
 We can see that as the number of input features increase, the CNN outperforms the RNN methods
+Increasing number of opening prices in input improves accuracy when predicting target opening price
