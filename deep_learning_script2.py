@@ -376,7 +376,7 @@ for SEED in [1234, 777, 69, 420]: # 1 person try each seed
             rnn_vector_model_history, pred = rnn_vector_forecasting(x_train,y_train,x_valid,y_valid,x_test,y_test)
             rnn_vector_loss = np.mean(keras.losses.mean_squared_error(y_test,pred)) #rnn_vector_model_history['val_loss'][-1] 
             print("deep rnn vector forecasting loss: ", rnn_vector_loss)
-            pltr.plot(pred,"vector prediction",TESTING_BATCH_SIZE)
+            #pltr.plot(pred,"vector prediction",TESTING_BATCH_SIZE)
 
             rnn_sequence_model_history, pred = rnn_sequence_forecasting(x_train,x_valid,x_test,series,indices)
             rnn_sequence_loss = np.mean(keras.losses.mean_squared_error(y_test,pred)) #rnn_sequence_model_history['val_loss'][-1]
