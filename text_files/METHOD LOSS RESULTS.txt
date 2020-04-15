@@ -1,0 +1,1095 @@
+SEED =  1234
+N_INPUT_FEATURES =  1
+N_EPOCHS =  100
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  11.662546157836914
+deep rnn vector forecasting loss:  3.7930624
+deep rnn sequence forecasting loss:  3.1548746
+deep rnn lstm sequence forecasting loss:  4.1088953
+deep rnn gru sequence forecasting loss:  4.0806966
+cnn vector forecasting loss:  3.9046206
+
+SEED =  1234
+N_INPUT_FEATURES =  1
+N_EPOCHS =  200
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  11.990930557250977
+deep rnn vector forecasting loss:  4.2303443
+deep rnn sequence forecasting loss:  3.9624577
+deep rnn lstm sequence forecasting loss:  5.156973
+deep rnn gru sequence forecasting loss:  5.0981097
+cnn vector forecasting loss:  4.1734285
+
+SEED =  1234
+N_INPUT_FEATURES =  1
+N_EPOCHS =  300
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  12.032536506652832
+deep rnn vector forecasting loss:  4.481835
+deep rnn sequence forecasting loss:  4.428722
+deep rnn lstm sequence forecasting loss:  5.8678746
+deep rnn gru sequence forecasting loss:  4.8830857
+cnn vector forecasting loss:  4.395556
+
+SEED =  1234
+N_INPUT_FEATURES =  1
+N_EPOCHS =  400
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  12.034849166870117
+deep rnn vector forecasting loss:  4.592278
+deep rnn sequence forecasting loss:  5.52374
+deep rnn lstm sequence forecasting loss:  5.7885003
+deep rnn gru sequence forecasting loss:  5.328038
+cnn vector forecasting loss:  4.261257
+
+SEED =  1234
+N_INPUT_FEATURES =  1
+N_EPOCHS =  500
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  12.034915924072266
+deep rnn vector forecasting loss:  4.642992
+deep rnn sequence forecasting loss:  6.0988007
+deep rnn lstm sequence forecasting loss:  4.702735
+deep rnn gru sequence forecasting loss:  5.2013416
+cnn vector forecasting loss:  3.8204596
+
+SEED =  1234
+N_INPUT_FEATURES =  1
+N_EPOCHS =  600
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  12.034915924072266
+deep rnn vector forecasting loss:  4.6640167
+deep rnn sequence forecasting loss:  5.425035
+deep rnn lstm sequence forecasting loss:  4.7412963
+deep rnn gru sequence forecasting loss:  5.5224648
+cnn vector forecasting loss:  4.0005016
+
+SEED =  1234
+N_INPUT_FEATURES =  1
+N_EPOCHS =  800
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  12.034915924072266
+deep rnn vector forecasting loss:  4.674536
+deep rnn sequence forecasting loss:  6.0300226
+deep rnn lstm sequence forecasting loss:  3.6163158
+deep rnn gru sequence forecasting loss:  4.4208508
+cnn vector forecasting loss:  3.917346
+
+SEED =  1234
+N_INPUT_FEATURES =  1
+N_EPOCHS =  1000
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  12.034915924072266
+deep rnn vector forecasting loss:  4.6754994
+deep rnn sequence forecasting loss:  5.7620106
+deep rnn lstm sequence forecasting loss:  4.3134565
+deep rnn gru sequence forecasting loss:  4.587234
+cnn vector forecasting loss:  3.8543203
+
+SEED =  1234
+N_INPUT_FEATURES =  6
+N_EPOCHS =  100
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  90.39193725585938
+deep rnn vector forecasting loss:  3.9475126
+deep rnn sequence forecasting loss:  4.4017773
+deep rnn lstm sequence forecasting loss:  4.080382
+deep rnn gru sequence forecasting loss:  3.4652905
+cnn vector forecasting loss:  7.2187243
+
+SEED =  1234
+N_INPUT_FEATURES =  6
+N_EPOCHS =  200
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  90.35333251953125
+deep rnn vector forecasting loss:  4.561674
+deep rnn sequence forecasting loss:  5.2982206
+deep rnn lstm sequence forecasting loss:  3.8021936
+deep rnn gru sequence forecasting loss:  4.4131784
+cnn vector forecasting loss:  7.292975
+
+SEED =  1234
+N_INPUT_FEATURES =  6
+N_EPOCHS =  300
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  90.35324096679688
+deep rnn vector forecasting loss:  4.876871
+deep rnn sequence forecasting loss:  6.0641932
+deep rnn lstm sequence forecasting loss:  3.7230515
+deep rnn gru sequence forecasting loss:  4.394869
+cnn vector forecasting loss:  7.5239787
+
+SEED =  1234
+N_INPUT_FEATURES =  6
+N_EPOCHS =  400
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  90.35324096679688
+deep rnn vector forecasting loss:  4.9371443
+deep rnn sequence forecasting loss:  5.9814076
+deep rnn lstm sequence forecasting loss:  3.7746255
+deep rnn gru sequence forecasting loss:  3.6825445
+cnn vector forecasting loss:  7.418438
+
+SEED =  1234
+N_INPUT_FEATURES =  6
+N_EPOCHS =  500
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  90.35323333740234
+deep rnn vector forecasting loss:  4.976901
+deep rnn sequence forecasting loss:  6.0281553
+deep rnn lstm sequence forecasting loss:  4.0756197
+deep rnn gru sequence forecasting loss:  3.710062
+cnn vector forecasting loss:  6.633135
+
+SEED =  1234
+N_INPUT_FEATURES =  6
+N_EPOCHS =  600
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  90.35324096679688
+deep rnn vector forecasting loss:  4.9907904
+deep rnn sequence forecasting loss:  6.08499
+deep rnn lstm sequence forecasting loss:  4.0312634
+deep rnn gru sequence forecasting loss:  4.4778013
+cnn vector forecasting loss:  7.116049
+
+SEED =  1234
+N_INPUT_FEATURES =  6
+N_EPOCHS =  800
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  90.35324096679688
+deep rnn vector forecasting loss:  4.994227
+deep rnn sequence forecasting loss:  5.948336
+deep rnn lstm sequence forecasting loss:  3.814342
+deep rnn gru sequence forecasting loss:  6.110497
+cnn vector forecasting loss:  7.556001
+
+SEED =  1234
+N_INPUT_FEATURES =  6
+N_EPOCHS =  1000
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  90.35324096679688
+deep rnn vector forecasting loss:  4.9941974
+deep rnn sequence forecasting loss:  6.0727906
+deep rnn lstm sequence forecasting loss:  3.8944628
+deep rnn gru sequence forecasting loss:  5.790188
+cnn vector forecasting loss:  8.055844
+
+SEED =  1234
+N_INPUT_FEATURES =  11
+N_EPOCHS =  100
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  76.67605590820312
+deep rnn vector forecasting loss:  3.861752
+deep rnn sequence forecasting loss:  4.0065403
+deep rnn lstm sequence forecasting loss:  3.7514422
+deep rnn gru sequence forecasting loss:  3.7650397
+cnn vector forecasting loss:  11.468597
+
+SEED =  1234
+N_INPUT_FEATURES =  11
+N_EPOCHS =  200
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  76.65870666503906
+deep rnn vector forecasting loss:  4.405217
+deep rnn sequence forecasting loss:  4.353289
+deep rnn lstm sequence forecasting loss:  3.469292
+deep rnn gru sequence forecasting loss:  3.5046241
+cnn vector forecasting loss:  12.964168
+
+SEED =  1234
+N_INPUT_FEATURES =  11
+N_EPOCHS =  300
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  76.65876770019531
+deep rnn vector forecasting loss:  4.5031176
+deep rnn sequence forecasting loss:  4.7444754
+deep rnn lstm sequence forecasting loss:  4.0481977
+deep rnn gru sequence forecasting loss:  4.214514
+cnn vector forecasting loss:  12.64688
+
+SEED =  1234
+N_INPUT_FEATURES =  11
+N_EPOCHS =  400
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  76.65876770019531
+deep rnn vector forecasting loss:  4.595699
+deep rnn sequence forecasting loss:  4.4381056
+deep rnn lstm sequence forecasting loss:  4.0464964
+deep rnn gru sequence forecasting loss:  5.127195
+cnn vector forecasting loss:  12.7703495
+
+SEED =  1234
+N_INPUT_FEATURES =  11
+N_EPOCHS =  500
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  76.65876770019531
+deep rnn vector forecasting loss:  4.657474
+deep rnn sequence forecasting loss:  4.652078
+deep rnn lstm sequence forecasting loss:  3.90235
+deep rnn gru sequence forecasting loss:  5.4376235
+cnn vector forecasting loss:  12.128432
+
+SEED =  1234
+N_INPUT_FEATURES =  11
+N_EPOCHS =  600
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  76.65878295898438
+deep rnn vector forecasting loss:  4.6840186
+deep rnn sequence forecasting loss:  4.6749563
+deep rnn lstm sequence forecasting loss:  4.4483223
+deep rnn gru sequence forecasting loss:  4.419826
+cnn vector forecasting loss:  12.396646
+
+SEED =  1234
+N_INPUT_FEATURES =  11
+N_EPOCHS =  800
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  76.65873718261719
+deep rnn vector forecasting loss:  4.696513
+deep rnn sequence forecasting loss:  3.9741073
+deep rnn lstm sequence forecasting loss:  6.3522186
+deep rnn gru sequence forecasting loss:  4.3128595
+cnn vector forecasting loss:  11.744596
+
+SEED =  1234
+N_INPUT_FEATURES =  11
+N_EPOCHS =  1000
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  76.65870666503906
+deep rnn vector forecasting loss:  4.69759
+deep rnn sequence forecasting loss:  4.423497
+deep rnn lstm sequence forecasting loss:  5.8301454
+deep rnn gru sequence forecasting loss:  5.956946
+cnn vector forecasting loss:  10.72747
+
+SEED =  1234
+N_INPUT_FEATURES =  16
+N_EPOCHS =  100
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  79.48428344726562
+deep rnn vector forecasting loss:  4.138474
+deep rnn sequence forecasting loss:  4.268301
+deep rnn lstm sequence forecasting loss:  3.1940756
+deep rnn gru sequence forecasting loss:  4.1877513
+cnn vector forecasting loss:  10.469482
+
+SEED =  1234
+N_INPUT_FEATURES =  16
+N_EPOCHS =  200
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  79.50021362304688
+deep rnn vector forecasting loss:  4.4119496
+deep rnn sequence forecasting loss:  3.1348279
+deep rnn lstm sequence forecasting loss:  3.4523132
+deep rnn gru sequence forecasting loss:  4.7253814
+cnn vector forecasting loss:  13.7871895
+
+SEED =  1234
+N_INPUT_FEATURES =  16
+N_EPOCHS =  300
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  79.50011444091797
+deep rnn vector forecasting loss:  4.5194907
+deep rnn sequence forecasting loss:  3.109961
+deep rnn lstm sequence forecasting loss:  3.6775198
+deep rnn gru sequence forecasting loss:  5.9310346
+cnn vector forecasting loss:  13.656849
+
+SEED =  1234
+N_INPUT_FEATURES =  16
+N_EPOCHS =  400
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  79.50011444091797
+deep rnn vector forecasting loss:  4.5269628
+deep rnn sequence forecasting loss:  4.0905004
+deep rnn lstm sequence forecasting loss:  4.9987354
+deep rnn gru sequence forecasting loss:  6.408571
+cnn vector forecasting loss:  13.8997135
+
+SEED =  1234
+N_INPUT_FEATURES =  16
+N_EPOCHS =  500
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  79.5001220703125
+deep rnn vector forecasting loss:  4.5206327
+deep rnn sequence forecasting loss:  4.1932592
+deep rnn lstm sequence forecasting loss:  5.1738067
+deep rnn gru sequence forecasting loss:  5.666415
+cnn vector forecasting loss:  15.778738
+
+SEED =  1234
+N_INPUT_FEATURES =  16
+N_EPOCHS =  600
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  79.5001220703125
+deep rnn vector forecasting loss:  4.517019
+deep rnn sequence forecasting loss:  4.4613204
+deep rnn lstm sequence forecasting loss:  4.862707
+deep rnn gru sequence forecasting loss:  6.261363
+cnn vector forecasting loss:  14.967159
+
+SEED =  1234
+N_INPUT_FEATURES =  16
+N_EPOCHS =  800
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  79.5001220703125
+deep rnn vector forecasting loss:  4.515523
+deep rnn sequence forecasting loss:  5.006221
+deep rnn lstm sequence forecasting loss:  5.607298
+deep rnn gru sequence forecasting loss:  5.2876253
+cnn vector forecasting loss:  13.658546
+
+SEED =  1234
+N_INPUT_FEATURES =  16
+N_EPOCHS =  1000
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  79.50011444091797
+deep rnn vector forecasting loss:  4.5154495
+deep rnn sequence forecasting loss:  5.2471514
+deep rnn lstm sequence forecasting loss:  6.799364
+deep rnn gru sequence forecasting loss:  7.651445
+cnn vector forecasting loss:  11.588378
+
+SEED =  1234
+N_INPUT_FEATURES =  21
+N_EPOCHS =  100
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  53.14986038208008
+deep rnn vector forecasting loss:  3.933889
+deep rnn sequence forecasting loss:  4.898765
+deep rnn lstm sequence forecasting loss:  4.2624454
+deep rnn gru sequence forecasting loss:  5.1166825
+cnn vector forecasting loss:  12.646494
+
+SEED =  1234
+N_INPUT_FEATURES =  21
+N_EPOCHS =  200
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  53.151123046875
+deep rnn vector forecasting loss:  4.1737437
+deep rnn sequence forecasting loss:  4.7058024
+deep rnn lstm sequence forecasting loss:  5.4941216
+deep rnn gru sequence forecasting loss:  6.5929976
+cnn vector forecasting loss:  12.726885
+
+SEED =  1234
+N_INPUT_FEATURES =  21
+N_EPOCHS =  300
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  53.15108108520508
+deep rnn vector forecasting loss:  4.282259
+deep rnn sequence forecasting loss:  4.1737943
+deep rnn lstm sequence forecasting loss:  5.9462767
+deep rnn gru sequence forecasting loss:  7.19427
+cnn vector forecasting loss:  12.859877
+
+SEED =  1234
+N_INPUT_FEATURES =  21
+N_EPOCHS =  400
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  53.15107727050781
+deep rnn vector forecasting loss:  4.3471537
+deep rnn sequence forecasting loss:  4.269694
+deep rnn lstm sequence forecasting loss:  6.6171346
+deep rnn gru sequence forecasting loss:  8.577735
+cnn vector forecasting loss:  13.928018
+
+SEED =  1234
+N_INPUT_FEATURES =  21
+N_EPOCHS =  500
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  53.15107345581055
+deep rnn vector forecasting loss:  4.3803897
+deep rnn sequence forecasting loss:  3.9753788
+deep rnn lstm sequence forecasting loss:  7.516791
+deep rnn gru sequence forecasting loss:  8.455913
+cnn vector forecasting loss:  14.974521
+
+SEED =  1234
+N_INPUT_FEATURES =  21
+N_EPOCHS =  600
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  53.15108108520508
+deep rnn vector forecasting loss:  4.3947606
+deep rnn sequence forecasting loss:  4.333353
+deep rnn lstm sequence forecasting loss:  8.129873
+deep rnn gru sequence forecasting loss:  8.769827
+cnn vector forecasting loss:  14.963383
+
+SEED =  1234
+N_INPUT_FEATURES =  21
+N_EPOCHS =  800
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  53.15123748779297
+deep rnn vector forecasting loss:  4.401393
+deep rnn sequence forecasting loss:  4.1646605
+deep rnn lstm sequence forecasting loss:  6.93755
+deep rnn gru sequence forecasting loss:  8.779281
+cnn vector forecasting loss:  12.1311035
+
+SEED =  1234
+N_INPUT_FEATURES =  21
+N_EPOCHS =  1000
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  53.151611328125
+deep rnn vector forecasting loss:  4.402979
+deep rnn sequence forecasting loss:  4.7875953
+deep rnn lstm sequence forecasting loss:  6.5767555
+deep rnn gru sequence forecasting loss:  6.2668552
+cnn vector forecasting loss:  12.337105
+
+SEED =  1234
+N_INPUT_FEATURES =  26
+N_EPOCHS =  100
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  67.96136474609375
+deep rnn vector forecasting loss:  4.762412
+deep rnn sequence forecasting loss:  4.114037
+deep rnn lstm sequence forecasting loss:  4.324576
+deep rnn gru sequence forecasting loss:  3.9941375
+cnn vector forecasting loss:  12.6628475
+
+SEED =  1234
+N_INPUT_FEATURES =  26
+N_EPOCHS =  200
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  67.96627807617188
+deep rnn vector forecasting loss:  5.470121
+deep rnn sequence forecasting loss:  4.249541
+deep rnn lstm sequence forecasting loss:  4.645504
+deep rnn gru sequence forecasting loss:  4.7166615
+cnn vector forecasting loss:  16.577085
+
+SEED =  1234
+N_INPUT_FEATURES =  26
+N_EPOCHS =  300
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  67.96636962890625
+deep rnn vector forecasting loss:  5.7230263
+deep rnn sequence forecasting loss:  5.5784326
+deep rnn lstm sequence forecasting loss:  5.1933274
+deep rnn gru sequence forecasting loss:  4.991863
+cnn vector forecasting loss:  15.881803
+
+SEED =  1234
+N_INPUT_FEATURES =  26
+N_EPOCHS =  400
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  67.96636199951172
+deep rnn vector forecasting loss:  5.741115
+deep rnn sequence forecasting loss:  5.0218835
+deep rnn lstm sequence forecasting loss:  5.0871224
+deep rnn gru sequence forecasting loss:  5.6323
+cnn vector forecasting loss:  16.800837
+
+SEED =  1234
+N_INPUT_FEATURES =  26
+N_EPOCHS =  500
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  67.96636199951172
+deep rnn vector forecasting loss:  5.7368717
+deep rnn sequence forecasting loss:  4.971954
+deep rnn lstm sequence forecasting loss:  4.4561677
+deep rnn gru sequence forecasting loss:  4.8458643
+cnn vector forecasting loss:  17.290882
+
+SEED =  1234
+N_INPUT_FEATURES =  26
+N_EPOCHS =  600
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  67.96636199951172
+deep rnn vector forecasting loss:  5.737145
+deep rnn sequence forecasting loss:  5.4474077
+deep rnn lstm sequence forecasting loss:  4.3759966
+deep rnn gru sequence forecasting loss:  5.160122
+cnn vector forecasting loss:  17.484156
+
+SEED =  1234
+N_INPUT_FEATURES =  26
+N_EPOCHS =  800
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  67.96575927734375
+deep rnn vector forecasting loss:  5.738577
+deep rnn sequence forecasting loss:  5.308168
+deep rnn lstm sequence forecasting loss:  3.9900565
+deep rnn gru sequence forecasting loss:  6.2895045
+cnn vector forecasting loss:  15.894452
+
+SEED =  1234
+N_INPUT_FEATURES =  26
+N_EPOCHS =  1000
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  67.9669189453125
+deep rnn vector forecasting loss:  5.738685
+deep rnn sequence forecasting loss:  6.3528447
+deep rnn lstm sequence forecasting loss:  4.2837267
+deep rnn gru sequence forecasting loss:  6.14345
+cnn vector forecasting loss:  16.712982
+
+SEED =  1234
+N_INPUT_FEATURES =  31
+N_EPOCHS =  100
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  53.298683166503906
+deep rnn vector forecasting loss:  4.202526
+deep rnn sequence forecasting loss:  4.455005
+deep rnn lstm sequence forecasting loss:  3.6412964
+deep rnn gru sequence forecasting loss:  5.0637064
+cnn vector forecasting loss:  13.376765
+
+SEED =  1234
+N_INPUT_FEATURES =  31
+N_EPOCHS =  200
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  53.29848861694336
+deep rnn vector forecasting loss:  4.530577
+deep rnn sequence forecasting loss:  5.6505504
+deep rnn lstm sequence forecasting loss:  4.120254
+deep rnn gru sequence forecasting loss:  4.258275
+cnn vector forecasting loss:  14.63625
+
+SEED =  1234
+N_INPUT_FEATURES =  31
+N_EPOCHS =  300
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  53.298458099365234
+deep rnn vector forecasting loss:  4.7363415
+deep rnn sequence forecasting loss:  6.1772017
+deep rnn lstm sequence forecasting loss:  4.629567
+deep rnn gru sequence forecasting loss:  5.3427677
+cnn vector forecasting loss:  16.003458
+
+SEED =  1234
+N_INPUT_FEATURES =  31
+N_EPOCHS =  400
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  53.2984619140625
+deep rnn vector forecasting loss:  4.8367248
+deep rnn sequence forecasting loss:  4.922586
+deep rnn lstm sequence forecasting loss:  5.037283
+deep rnn gru sequence forecasting loss:  5.3799524
+cnn vector forecasting loss:  15.027397
+
+SEED =  1234
+N_INPUT_FEATURES =  31
+N_EPOCHS =  500
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  53.29845428466797
+deep rnn vector forecasting loss:  4.8837194
+deep rnn sequence forecasting loss:  4.503349
+deep rnn lstm sequence forecasting loss:  4.9071445
+deep rnn gru sequence forecasting loss:  6.298313
+cnn vector forecasting loss:  15.363286
+
+SEED =  1234
+N_INPUT_FEATURES =  31
+N_EPOCHS =  600
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  53.2984504699707
+deep rnn vector forecasting loss:  4.902942
+deep rnn sequence forecasting loss:  4.722298
+deep rnn lstm sequence forecasting loss:  5.0776873
+deep rnn gru sequence forecasting loss:  6.4397087
+cnn vector forecasting loss:  15.98416
+
+SEED =  1234
+N_INPUT_FEATURES =  31
+N_EPOCHS =  800
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  53.298465728759766
+deep rnn vector forecasting loss:  4.9122615
+deep rnn sequence forecasting loss:  4.7501426
+deep rnn lstm sequence forecasting loss:  5.4254565
+deep rnn gru sequence forecasting loss:  7.2260036
+cnn vector forecasting loss:  15.9393015
+
+SEED =  1234
+N_INPUT_FEATURES =  31
+N_EPOCHS =  1000
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  53.296138763427734
+deep rnn vector forecasting loss:  4.9131117
+deep rnn sequence forecasting loss:  4.591924
+deep rnn lstm sequence forecasting loss:  5.8953485
+deep rnn gru sequence forecasting loss:  6.448726
+cnn vector forecasting loss:  15.374931
+
+SEED =  1234
+N_INPUT_FEATURES =  36
+N_EPOCHS =  100
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  67.05046844482422
+deep rnn vector forecasting loss:  4.098377
+deep rnn sequence forecasting loss:  3.6831367
+deep rnn lstm sequence forecasting loss:  3.7924259
+deep rnn gru sequence forecasting loss:  4.1714005
+cnn vector forecasting loss:  9.103464
+
+SEED =  1234
+N_INPUT_FEATURES =  36
+N_EPOCHS =  200
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  67.04512786865234
+deep rnn vector forecasting loss:  4.2788424
+deep rnn sequence forecasting loss:  4.610562
+deep rnn lstm sequence forecasting loss:  4.830211
+deep rnn gru sequence forecasting loss:  4.647577
+cnn vector forecasting loss:  11.593922
+
+SEED =  1234
+N_INPUT_FEATURES =  36
+N_EPOCHS =  300
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  67.04515075683594
+deep rnn vector forecasting loss:  4.5197735
+deep rnn sequence forecasting loss:  5.6128483
+deep rnn lstm sequence forecasting loss:  6.0972304
+deep rnn gru sequence forecasting loss:  4.618358
+cnn vector forecasting loss:  12.206023
+
+SEED =  1234
+N_INPUT_FEATURES =  36
+N_EPOCHS =  400
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  67.04515075683594
+deep rnn vector forecasting loss:  4.6894755
+deep rnn sequence forecasting loss:  5.114553
+deep rnn lstm sequence forecasting loss:  6.539656
+deep rnn gru sequence forecasting loss:  4.1496506
+cnn vector forecasting loss:  10.949272
+
+SEED =  1234
+N_INPUT_FEATURES =  36
+N_EPOCHS =  500
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  67.04515075683594
+deep rnn vector forecasting loss:  4.75881
+deep rnn sequence forecasting loss:  4.294479
+deep rnn lstm sequence forecasting loss:  6.7004604
+deep rnn gru sequence forecasting loss:  3.944156
+cnn vector forecasting loss:  10.35368
+
+SEED =  1234
+N_INPUT_FEATURES =  36
+N_EPOCHS =  600
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  67.05287170410156
+deep rnn vector forecasting loss:  4.781187
+deep rnn sequence forecasting loss:  4.352581
+deep rnn lstm sequence forecasting loss:  6.859139
+deep rnn gru sequence forecasting loss:  4.0761166
+cnn vector forecasting loss:  11.441509
+
+SEED =  1234
+N_INPUT_FEATURES =  36
+N_EPOCHS =  800
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  67.05059814453125
+deep rnn vector forecasting loss:  4.7883644
+deep rnn sequence forecasting loss:  4.3607454
+deep rnn lstm sequence forecasting loss:  6.0731697
+deep rnn gru sequence forecasting loss:  3.3685489
+cnn vector forecasting loss:  10.610348
+
+SEED =  1234
+N_INPUT_FEATURES =  36
+N_EPOCHS =  1000
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  67.04794311523438
+deep rnn vector forecasting loss:  4.7885885
+deep rnn sequence forecasting loss:  4.7828813
+deep rnn lstm sequence forecasting loss:  5.9238386
+deep rnn gru sequence forecasting loss:  3.3257072
+cnn vector forecasting loss:  9.808138
+
+SEED =  1234
+N_INPUT_FEATURES =  41
+N_EPOCHS =  100
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  25197875200.0
+deep rnn vector forecasting loss:  4.0236382
+deep rnn sequence forecasting loss:  3.5922015
+deep rnn lstm sequence forecasting loss:  3.7390983
+deep rnn gru sequence forecasting loss:  3.892069
+cnn vector forecasting loss:  3.2941658
+
+SEED =  1234
+N_INPUT_FEATURES =  41
+N_EPOCHS =  200
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  25186385920.0
+deep rnn vector forecasting loss:  4.1637135
+deep rnn sequence forecasting loss:  3.055096
+deep rnn lstm sequence forecasting loss:  3.4330413
+deep rnn gru sequence forecasting loss:  3.3867698
+cnn vector forecasting loss:  3.2943683
+
+SEED =  1234
+N_INPUT_FEATURES =  41
+N_EPOCHS =  300
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  25186396160.0
+deep rnn vector forecasting loss:  4.3576465
+deep rnn sequence forecasting loss:  3.5572007
+deep rnn lstm sequence forecasting loss:  3.4854898
+deep rnn gru sequence forecasting loss:  3.5149446
+cnn vector forecasting loss:  3.294503
+
+SEED =  1234
+N_INPUT_FEATURES =  41
+N_EPOCHS =  400
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  25186396160.0
+deep rnn vector forecasting loss:  4.5908556
+deep rnn sequence forecasting loss:  3.1951232
+deep rnn lstm sequence forecasting loss:  4.011588
+deep rnn gru sequence forecasting loss:  3.4166229
+cnn vector forecasting loss:  3.294616
+
+SEED =  1234
+N_INPUT_FEATURES =  41
+N_EPOCHS =  500
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  25186396160.0
+deep rnn vector forecasting loss:  4.711012
+deep rnn sequence forecasting loss:  3.680049
+deep rnn lstm sequence forecasting loss:  4.06026
+deep rnn gru sequence forecasting loss:  3.574917
+cnn vector forecasting loss:  3.2947335
+
+SEED =  1234
+N_INPUT_FEATURES =  41
+N_EPOCHS =  600
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  25186396160.0
+deep rnn vector forecasting loss:  4.7843113
+deep rnn sequence forecasting loss:  3.8972814
+deep rnn lstm sequence forecasting loss:  3.8074806
+deep rnn gru sequence forecasting loss:  3.657726
+cnn vector forecasting loss:  3.29486
+
+SEED =  1234
+N_INPUT_FEATURES =  41
+N_EPOCHS =  800
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  25186396160.0
+deep rnn vector forecasting loss:  4.8604894
+deep rnn sequence forecasting loss:  3.3259966
+deep rnn lstm sequence forecasting loss:  3.7980034
+deep rnn gru sequence forecasting loss:  3.8748374
+cnn vector forecasting loss:  3.2951336
+
+SEED =  1234
+N_INPUT_FEATURES =  41
+N_EPOCHS =  1000
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  25186392064.0
+deep rnn vector forecasting loss:  4.8788776
+deep rnn sequence forecasting loss:  3.2539942
+deep rnn lstm sequence forecasting loss:  4.264675
+deep rnn gru sequence forecasting loss:  3.698324
+cnn vector forecasting loss:  3.2954364
+
+SEED =  777
+N_INPUT_FEATURES =  1
+N_EPOCHS =  100
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  14.003326416015625
+deep rnn vector forecasting loss:  4.390692
+deep rnn sequence forecasting loss:  3.1535034
+deep rnn lstm sequence forecasting loss:  3.5491776
+deep rnn gru sequence forecasting loss:  4.673486
+cnn vector forecasting loss:  4.7178197
+
+SEED =  777
+N_INPUT_FEATURES =  1
+N_EPOCHS =  200
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  13.987258911132812
+deep rnn vector forecasting loss:  5.171249
+deep rnn sequence forecasting loss:  4.119845
+deep rnn lstm sequence forecasting loss:  4.1532006
+deep rnn gru sequence forecasting loss:  5.6733427
+cnn vector forecasting loss:  5.153393
+
+SEED =  777
+N_INPUT_FEATURES =  1
+N_EPOCHS =  300
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  13.950786590576172
+deep rnn vector forecasting loss:  5.491434
+deep rnn sequence forecasting loss:  4.7743206
+deep rnn lstm sequence forecasting loss:  4.4113317
+deep rnn gru sequence forecasting loss:  5.5517716
+cnn vector forecasting loss:  5.299068
+
+SEED =  777
+N_INPUT_FEATURES =  1
+N_EPOCHS =  400
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  13.950051307678223
+deep rnn vector forecasting loss:  5.630901
+deep rnn sequence forecasting loss:  5.133395
+deep rnn lstm sequence forecasting loss:  4.171895
+deep rnn gru sequence forecasting loss:  5.260306
+cnn vector forecasting loss:  5.1291685
+
+SEED =  777
+N_INPUT_FEATURES =  1
+N_EPOCHS =  500
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  13.950643539428711
+deep rnn vector forecasting loss:  5.6921973
+deep rnn sequence forecasting loss:  4.643818
+deep rnn lstm sequence forecasting loss:  5.10535
+deep rnn gru sequence forecasting loss:  7.6717544
+cnn vector forecasting loss:  5.4490023
+
+SEED =  777
+N_INPUT_FEATURES =  1
+N_EPOCHS =  600
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  13.950729370117188
+deep rnn vector forecasting loss:  5.712912
+deep rnn sequence forecasting loss:  4.3948183
+deep rnn lstm sequence forecasting loss:  5.696209
+deep rnn gru sequence forecasting loss:  8.630399
+cnn vector forecasting loss:  5.606079
+
+SEED =  777
+N_INPUT_FEATURES =  1
+N_EPOCHS =  800
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  13.950733184814453
+deep rnn vector forecasting loss:  5.719588
+deep rnn sequence forecasting loss:  4.927495
+deep rnn lstm sequence forecasting loss:  4.6852465
+deep rnn gru sequence forecasting loss:  9.313575
+cnn vector forecasting loss:  5.448314
+
+SEED =  777
+N_INPUT_FEATURES =  1
+N_EPOCHS =  1000
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  13.950733184814453
+deep rnn vector forecasting loss:  5.7195277
+deep rnn sequence forecasting loss:  6.172571
+deep rnn lstm sequence forecasting loss:  5.1445394
+deep rnn gru sequence forecasting loss:  7.9727736
+cnn vector forecasting loss:  4.9653277
+
+SEED =  777
+N_INPUT_FEATURES =  6
+N_EPOCHS =  100
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  114.38188934326172
+deep rnn vector forecasting loss:  3.7220156
+deep rnn sequence forecasting loss:  3.8211868
+deep rnn lstm sequence forecasting loss:  3.8948412
+deep rnn gru sequence forecasting loss:  5.089884
+cnn vector forecasting loss:  6.8894215
+
+SEED =  777
+N_INPUT_FEATURES =  6
+N_EPOCHS =  200
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  114.40065002441406
+deep rnn vector forecasting loss:  3.8872626
+deep rnn sequence forecasting loss:  3.9862206
+deep rnn lstm sequence forecasting loss:  4.548901
+deep rnn gru sequence forecasting loss:  5.7752924
+cnn vector forecasting loss:  6.7431545
+
+SEED =  777
+N_INPUT_FEATURES =  6
+N_EPOCHS =  300
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  114.40090942382812
+deep rnn vector forecasting loss:  4.0881147
+deep rnn sequence forecasting loss:  4.621166
+deep rnn lstm sequence forecasting loss:  4.784061
+deep rnn gru sequence forecasting loss:  6.1514125
+cnn vector forecasting loss:  7.30695
+
+SEED =  777
+N_INPUT_FEATURES =  6
+N_EPOCHS =  400
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  114.40089416503906
+deep rnn vector forecasting loss:  4.1426897
+deep rnn sequence forecasting loss:  4.372033
+deep rnn lstm sequence forecasting loss:  4.1899886
+deep rnn gru sequence forecasting loss:  6.6225266
+cnn vector forecasting loss:  7.2796693
+
+SEED =  777
+N_INPUT_FEATURES =  6
+N_EPOCHS =  500
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  114.40090942382812
+deep rnn vector forecasting loss:  4.163032
+deep rnn sequence forecasting loss:  4.5663304
+deep rnn lstm sequence forecasting loss:  4.331453
+deep rnn gru sequence forecasting loss:  5.481255
+cnn vector forecasting loss:  7.2636094
+
+SEED =  777
+N_INPUT_FEATURES =  6
+N_EPOCHS =  600
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  114.40090942382812
+deep rnn vector forecasting loss:  4.1724195
+deep rnn sequence forecasting loss:  4.616597
+deep rnn lstm sequence forecasting loss:  4.925922
+deep rnn gru sequence forecasting loss:  6.2472014
+cnn vector forecasting loss:  7.269039
+
+SEED =  777
+N_INPUT_FEATURES =  6
+N_EPOCHS =  800
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  114.40089416503906
+deep rnn vector forecasting loss:  4.1765943
+deep rnn sequence forecasting loss:  3.8278534
+deep rnn lstm sequence forecasting loss:  5.1152005
+deep rnn gru sequence forecasting loss:  6.405583
+cnn vector forecasting loss:  7.2484417
+
+SEED =  777
+N_INPUT_FEATURES =  6
+N_EPOCHS =  1000
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  114.4009017944336
+deep rnn vector forecasting loss:  4.1767983
+deep rnn sequence forecasting loss:  4.016381
+deep rnn lstm sequence forecasting loss:  4.4008226
+deep rnn gru sequence forecasting loss:  5.4192033
+cnn vector forecasting loss:  6.972057
+
+SEED =  777
+N_INPUT_FEATURES =  11
+N_EPOCHS =  100
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  79.57583618164062
+deep rnn vector forecasting loss:  4.239104
+deep rnn sequence forecasting loss:  3.9963753
+deep rnn lstm sequence forecasting loss:  3.5034685
+deep rnn gru sequence forecasting loss:  3.8824663
+cnn vector forecasting loss:  9.610095
+
+SEED =  777
+N_INPUT_FEATURES =  11
+N_EPOCHS =  200
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  79.59201049804688
+deep rnn vector forecasting loss:  4.781838
+deep rnn sequence forecasting loss:  4.7869368
+deep rnn lstm sequence forecasting loss:  3.8043537
+deep rnn gru sequence forecasting loss:  4.116721
+cnn vector forecasting loss:  13.459504
+
+SEED =  777
+N_INPUT_FEATURES =  11
+N_EPOCHS =  300
+
+naive forecasting loss:  5.614142182744399
+linear regression forecasting loss:  79.59194946289062
+deep rnn vector forecasting loss:  5.1574364
+deep rnn sequence forecasting loss:  5.5610933
+deep rnn lstm sequence forecasting loss:  4.1968746
+deep rnn gru sequence forecasting loss:  4.1930876
+cnn vector forecasting loss:  12.557869
+
+SEED =  777
+N_INPUT_FEATURES =  11
+N_EPOCHS =  400
