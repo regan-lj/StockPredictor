@@ -8,6 +8,8 @@ from data_preprocess import series as inputData
 from pylab import rcParams
 rcParams['figure.figsize'] = 20, 10 # x, y
 #######################################
+inputData = inputData[:-1]###
+targetData = targetData[:-1]###
 targetData = inputData ###
 stockDataFinal = targetData
 
@@ -20,17 +22,19 @@ N_PREDICTIONS = 49 # denoted by m in the pydocs
 N_OUTPUT_FEATURES = 1
 # data format: (dimension 1, dimension 2, dimension 3) = (BATCH_SIZE, N_TIME_STEPS, N_INPUT_FEATURES)
 
-TRAINING_BATCH_SIZE = 6
+TRAINING_BATCH_SIZE = 5
 VALIDATION_BATCH_SIZE = 2
 TESTING_BATCH_SIZE = 1
-N_INPUT_STEPS = N_STEPS - N_PREDICTIONS # denoted by n in the
+N_INPUT_STEPS = N_STEPS - N_PREDICTIONS # denoted by n in the pydocs
 stockDataFinal[:,:N_INPUT_STEPS,:] = inputData[:,:N_INPUT_STEPS,:]
             
 
 for SEED in [1234, 777, 69, 420]: # 1 person try each seed
-    for N_INPUT_FEATURES in range(41, 46, 5):
-        for N_EPOCHS in [100, 200, 300, 400, 500, 600, 800, 1000]:
+    for N_INPUT_FEATURES in range(1, 51, 10): # for each feature set (opening, high, low, closing, value) 
+        for N_EPOCHS in [100, 300, 500, 700, 900, 1100]:
             tf.compat.v1.random.set_random_seed(SEED)
+            if N_INPUT_FEATURES == 11:
+                N_INPUT_FEATURES = 10
 
             print()
             print("SEED = ", SEED)
