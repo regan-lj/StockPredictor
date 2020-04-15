@@ -12,6 +12,7 @@ Signals
 import matplotlib.pyplot as plt
 import numpy as np
 from stockData import stockDataFinal,my_feature,my_company,my_batch,N_COMPANIES
+import pandas as pd
 
 sensitivity = 4
 
@@ -255,11 +256,32 @@ def plot_signals(data, length, signs):
 
 # This will be changed to be the output of the machine learning:
 prediction = stockDataFinal[my_batch-3, :, (my_feature-1)*N_COMPANIES+my_company-1]
-num_predictions = 100
+num_predictions = 150
+
+# print("------------- Prediction -------------")
+# print(prediction)
 
 signs = determine_maxima_minima(prediction, num_predictions, sensitivity)
 final_result = np.arange(2*num_predictions).reshape(2,num_predictions)
 final_result[0,:] = prediction
 final_result[1,:] = signs
 
+# print("------------- Final Results -------------")
+# print(final_result)
+# print(type(final_result))
+
+a_list = []
+b_list = []
+for i in range(len(final_result[0])):
+    if final_result[1, i]:
+        a_list.append(final_result[0, i])
+        if final_result[1, i] == 1:
+            b_list.append("BUY")
+        elif final_result[1, i] == -1:
+            b_list.append("SELL")
+
+orders = pd.DataFrame({'Price': a_list, 'Order': b_list})
+# print(dataSet)
+
 plot_signals(prediction, num_predictions, signs)
+
