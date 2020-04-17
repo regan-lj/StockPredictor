@@ -35,10 +35,14 @@ def reverse_differencing(last_value, ML_output):  #use this function on ML preci
     """ Integrate data into original data format, e.g. raw stack price
         last_value is value before differncing for feature we want to predict at last time step
     """
-    output = ML_output.copy()
-    output[0] = ML_output[0] + last_value
-    for i in range(1, len(ML_output)):
-        output[i] = ML_output[i] + output[i-1]
+    head = np.zeros(1)
+    head[0] = ML_output[0] + last_value
+    tail = ML_output.copy()
+    output = np.append(head,tail)
+    temp = output.copy()
+    print(len(output))
+    for i in range(1, len(temp)):
+        output[i] = temp[i] + output[i-1]
     return output
 
 series = time_differencing(np_stockData_resh) #export this to main script
