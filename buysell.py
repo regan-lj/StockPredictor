@@ -260,6 +260,8 @@ num_predictions = 150
 
 # print("------------- Prediction -------------")
 # print(prediction)
+# print(len(prediction))
+# print(type(prediction))
 
 signs = determine_maxima_minima(prediction, num_predictions, sensitivity)
 final_result = np.arange(2*num_predictions).reshape(2,num_predictions)
@@ -268,20 +270,22 @@ final_result[1,:] = signs
 
 # print("------------- Final Results -------------")
 # print(final_result)
+# print(len(final_result[0]))
 # print(type(final_result))
 
-a_list = []
-b_list = []
+day_list = []
+order_list = []
+price_list = []
 for i in range(len(final_result[0])):
     if final_result[1, i]:
-        a_list.append(final_result[0, i])
+        day_list.append(i)
+        price_list.append(prediction[i])
         if final_result[1, i] == 1:
-            b_list.append("BUY")
+            order_list.append("BUY")
         elif final_result[1, i] == -1:
-            b_list.append("SELL")
+            order_list.append("SELL")
 
-orders = pd.DataFrame({'Price': a_list, 'Order': b_list})
-# print(dataSet)
+orders = pd.DataFrame({'Day': day_list, 'Order': order_list, 'Price': price_list})
 
-plot_signals(prediction, num_predictions, signs)
+# plot_signals(prediction, num_predictions, signs)
 
