@@ -19,25 +19,25 @@ import matplotlib.pyplot as plt
 # define period: common options would include ‘1d’ (daily), ‘1mo’ (monthly), ‘1y’ (yearly)
 timeSteps = "1d"
 
-# define start: the date to start gathering the data. For example ‘2010–1–1’
-startDate = '2014-10-20'
+# define start: the date to start gathering the data. For example ‘2010–1–1’. 2005-11-10 is 3600
+startDate = '1996-05-1'
 
 # define end: the date to end gathering the data. For example ‘2020–1–25’
 endDate = '2020-03-3'
 
 # define the ticker symbol
-tickerSymbols = ["WUBA", "GOOGL", "ADBE", "T", "FB", "STM", "BABA", "IAC", "RUBI", "MSFT"]
+tickerSymbols = ["ADBE", "T", "MSFT", "ORCL", "IBM", "HPQ", "GE", "ADSK", "CTXS", "INTU"]
 tickerFeatures = ["Open", "High", "Low", "Close", "Volume"]
-tickerNames = {"GOOGL": "Alphabet Inc",
-               "ADBE": "Adobe Inc",
+tickerNames = {"ADBE": "Adobe Inc.",
                "T": "AT&T, Inc.",
-               "FB": "Facebook Inc",
-               "STM": "ST Microelectronics",
-               "BABA": "Alibaba Group Holding Ltd",
-               "IAC": "IAC InterActiveCorp",
-               "RUBI": "Rubicon Project Inc",
-               "MSFT": "Microsoft Corporation",
-               "WUBA": "58.com Inc"}
+               "MSFT": "Microsoft Corp.",
+               "ORCL": "Oracle Corp.",
+               "IBM": "International Business Machines Corp.",
+               "HPQ": "Hewlett-Packard Co.",
+               "GE": "General Electric",
+               "ADSK": "Autodesk, Inc.",
+               "CTXS": "Citrix Systems, Inc.",
+               "INTU": "Intuit Inc."}
 
 # Plot data or not
 plotdata = 0
@@ -52,7 +52,7 @@ stockData = yf.download(  # or pdr.get_data_yahoo(...
     # use "period" instead of start/end
     # valid periods: 1d,5d,1mo,3mo,6mo,1y,2y,5y,10y,ytd,max
     # (optional, default is '1mo')
-    # period="ytd",
+    # period="ytd"
 
     start=startDate,
     end=endDate,
@@ -101,11 +101,25 @@ if plotdata:
 np_stockData = np.array(stockData)
 
 # Primary numbers
-N_TIMESTEPS = np_stockData.shape[0]                                                     # = 1350
+N_TIMESTEPS = np_stockData.shape[0]                                                     # = 6000
+print(N_TIMESTEPS)
 N_COMPANIES = len(tickerSymbols)                                                        # = 10
 N_FEATURES = int(np_stockData.shape[1]/N_COMPANIES)                                     # = 5
-N_TIMESTEPS_PER_BATCH = 150                                                             # = 150
-N_BATCHES = int(np.floor(N_TIMESTEPS/N_TIMESTEPS_PER_BATCH))                            # = 9
+N_TIMESTEPS_PER_BATCH = 250                                                             # anything 6000 can be evenly divided with
+N_BATCHES = int(np.floor(N_TIMESTEPS/N_TIMESTEPS_PER_BATCH))                            # = 24 if N_TIMESTEPS_PER_BATCH = 250
+
+# Check for NAN-values
+containing_nan_values = False
+for company in tickerSymbols:
+    containing_nan_values = False
+    for feature in tickerFeatures:
+        test_array = np.array(stockData[company, feature])
+        for data in test_array:
+            if not data or np.isnan(data):
+                containing_nan_values = True
+
+    if containing_nan_values:
+        print("Company ", tickerNames[company], " contains NAN-values")
 
 stockDataFinal = np.zeros([N_BATCHES, N_TIMESTEPS_PER_BATCH, N_FEATURES*N_COMPANIES])
 
@@ -132,8 +146,8 @@ my_feature = 1
 # Chose company 1-10 in the list of ticker symbols above
 my_company = 1
 
-# Chose time interval (the batch) between 1 and 9. Batch 9 is the most recent 100 data points.
-my_batch = 9
+# Chose time interval (the batch) between 1 and N_BATCHES. Batch N_BATCHES is the most recent N_TIMESTEPS_PER_BATCH data points.
+my_batch = 24
 
 # Print the part of the data chosen
 # print(stockDataFinal[my_batch-1, :, (my_feature-1)*N_COMPANIES+my_company-1])
@@ -161,4 +175,3 @@ print(stockDataFinal[my_batch-1, :, (my_feature-1)*N_COMPANIES+my_company-1])
 
 # get recommendation data for ticker
 # tickerRec = tickerData.recommendations
-
