@@ -105,8 +105,8 @@ N_TIMESTEPS = np_stockData.shape[0]                                             
 print(N_TIMESTEPS)
 N_COMPANIES = len(tickerSymbols)                                                        # = 10
 N_FEATURES = int(np_stockData.shape[1]/N_COMPANIES)                                     # = 5
-N_TIMESTEPS_PER_BATCH = 250                                                             # anything 6000 can be evenly divided with
-N_BATCHES = int(np.floor(N_TIMESTEPS/N_TIMESTEPS_PER_BATCH))                            # = 24 if N_TIMESTEPS_PER_BATCH = 250
+N_TIMESTEPS_PER_BATCH = 300                                                             # anything 6000 can be evenly divided with
+N_BATCHES = int(np.floor(N_TIMESTEPS/N_TIMESTEPS_PER_BATCH))                            # = 20 if N_TIMESTEPS_PER_BATCH = 300
 
 # Check for NAN-values
 containing_nan_values = False
@@ -147,7 +147,7 @@ my_feature = 1
 my_company = 1
 
 # Chose time interval (the batch) between 1 and N_BATCHES. Batch N_BATCHES is the most recent N_TIMESTEPS_PER_BATCH data points.
-my_batch = 24
+my_batch = 20
 
 # Print the part of the data chosen
 # print(stockDataFinal[my_batch-1, :, (my_feature-1)*N_COMPANIES+my_company-1])
