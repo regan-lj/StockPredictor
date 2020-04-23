@@ -2,8 +2,9 @@ import pandas as pd
 from buysell import prediction
 import matplotlib.pyplot as plt
 # from stockData import stockDataFinal,my_feature,my_company,my_batch,N_COMPANIES
+from buysell import actual_results_MAIN
 
-data = pd.DataFrame({'Price': prediction})
+data = pd.DataFrame({'Price': actual_results_MAIN})
 dataSeries = data['Price']
 SMA = dataSeries.rolling(window=20).mean()
 
