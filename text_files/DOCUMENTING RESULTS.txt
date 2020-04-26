@@ -1,1 +1,0 @@
-Removed linear regression forecasting from the pylpot because as the number of input features increased the loss exploded and made all the other plots impossible to be see
