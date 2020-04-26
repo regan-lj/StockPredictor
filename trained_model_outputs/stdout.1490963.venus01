@@ -1,0 +1,618 @@
+300
+299
+(20, 299, 50)
+
+SEED =  1234
+N_INPUT_NEURONS =  20
+N_HIDDEN_NEURONS =  20
+N_INPUT_FEATURES =  1
+N_EPOCHS =  10
+
+naive forecasting loss:  37.17758310518732
+linear regression forecasting loss:  1.6869670152664185
+deep rnn iterative forecasting loss:  21.640576154696298
+deep rnn vector forecasting loss:  20.969002
+deep rnn sequence forecasting loss:  21.020391
+deep rnn lstm sequence forecasting loss:  20.921793
+deep rnn gru sequence forecasting loss:  20.918161
+BEST =  [(1.6869670152664185, ('linear prediction', 1234, 20, 20, 1, 10))]
+
+SEED =  1234
+N_INPUT_NEURONS =  20
+N_HIDDEN_NEURONS =  20
+N_INPUT_FEATURES =  1
+N_EPOCHS =  50
+
+naive forecasting loss:  37.17758310518732
+linear regression forecasting loss:  1.7756109237670898
+deep rnn iterative forecasting loss:  21.985924223414113
+deep rnn vector forecasting loss:  20.980875
+deep rnn sequence forecasting loss:  20.816635
+deep rnn lstm sequence forecasting loss:  21.180185
+deep rnn gru sequence forecasting loss:  21.110899
+BEST =  [(1.6869670152664185, ('linear prediction', 1234, 20, 20, 1, 10))]
+
+SEED =  1234
+N_INPUT_NEURONS =  20
+N_HIDDEN_NEURONS =  20
+N_INPUT_FEATURES =  1
+N_EPOCHS =  100
+
+naive forecasting loss:  37.17758310518732
+linear regression forecasting loss:  1.7946735620498657
+deep rnn iterative forecasting loss:  21.99398137497935
+deep rnn vector forecasting loss:  21.075388
+deep rnn sequence forecasting loss:  20.787714
+deep rnn lstm sequence forecasting loss:  21.13725
+deep rnn gru sequence forecasting loss:  21.057264
+BEST =  [(1.6869670152664185, ('linear prediction', 1234, 20, 20, 1, 10))]
+
+SEED =  1234
+N_INPUT_NEURONS =  20
+N_HIDDEN_NEURONS =  20
+N_INPUT_FEATURES =  1
+N_EPOCHS =  300
+
+naive forecasting loss:  37.17758310518732
+linear regression forecasting loss:  1.8129373788833618
+deep rnn iterative forecasting loss:  21.993369677058567
+deep rnn vector forecasting loss:  21.55551
+deep rnn sequence forecasting loss:  21.206942
+deep rnn lstm sequence forecasting loss:  21.232874
+deep rnn gru sequence forecasting loss:  21.326141
+BEST =  [(1.6869670152664185, ('linear prediction', 1234, 20, 20, 1, 10))]
+
+SEED =  1234
+N_INPUT_NEURONS =  20
+N_HIDDEN_NEURONS =  20
+N_INPUT_FEATURES =  1
+N_EPOCHS =  500
+
+naive forecasting loss:  37.17758310518732
+linear regression forecasting loss:  1.8186887502670288
+deep rnn iterative forecasting loss:  21.993369244234128
+deep rnn vector forecasting loss:  21.632326
+deep rnn sequence forecasting loss:  20.830833
+deep rnn lstm sequence forecasting loss:  21.107025
+deep rnn gru sequence forecasting loss:  21.223969
+BEST =  [(1.6869670152664185, ('linear prediction', 1234, 20, 20, 1, 10))]
+
+SEED =  1234
+N_INPUT_NEURONS =  20
+N_HIDDEN_NEURONS =  20
+N_INPUT_FEATURES =  1
+N_EPOCHS =  700
+
+naive forecasting loss:  37.17758310518732
+linear regression forecasting loss:  1.8193715810775757
+deep rnn iterative forecasting loss:  21.993369557241714
+deep rnn vector forecasting loss:  21.715593
+deep rnn sequence forecasting loss:  20.704548
+deep rnn lstm sequence forecasting loss:  21.582169
+deep rnn gru sequence forecasting loss:  21.031586
+BEST =  [(1.6869670152664185, ('linear prediction', 1234, 20, 20, 1, 10))]
+
+SEED =  1234
+N_INPUT_NEURONS =  20
+N_HIDDEN_NEURONS =  20
+N_INPUT_FEATURES =  1
+N_EPOCHS =  900
+
+naive forecasting loss:  37.17758310518732
+linear regression forecasting loss:  1.8194078207015991
+deep rnn iterative forecasting loss:  21.993369175572553
+deep rnn vector forecasting loss:  21.770424
+deep rnn sequence forecasting loss:  20.823933
+deep rnn lstm sequence forecasting loss:  21.182182
+deep rnn gru sequence forecasting loss:  20.624458
+BEST =  [(1.6869670152664185, ('linear prediction', 1234, 20, 20, 1, 10))]
+
+SEED =  1234
+N_INPUT_NEURONS =  20
+N_HIDDEN_NEURONS =  20
+N_INPUT_FEATURES =  1
+N_EPOCHS =  1100
+
+naive forecasting loss:  37.17758310518732
+linear regression forecasting loss:  1.8194087743759155
+deep rnn iterative forecasting loss:  21.993369379151275
+deep rnn vector forecasting loss:  21.77081
+deep rnn sequence forecasting loss:  20.838623
+deep rnn lstm sequence forecasting loss:  21.42714
+deep rnn gru sequence forecasting loss:  21.163422
+BEST =  [(1.6869670152664185, ('linear prediction', 1234, 20, 20, 1, 10))]
+
+SEED =  1234
+N_INPUT_NEURONS =  20
+N_HIDDEN_NEURONS =  20
+N_INPUT_FEATURES =  10
+N_EPOCHS =  10
+
+naive forecasting loss:  37.17758310518732
+linear regression forecasting loss:  2.0799400806427
+deep rnn iterative forecasting loss:  21.4264211498206
+deep rnn vector forecasting loss:  20.75715
+deep rnn sequence forecasting loss:  20.94281
+deep rnn lstm sequence forecasting loss:  20.898468
+deep rnn gru sequence forecasting loss:  20.882208
+BEST =  [(1.6869670152664185, ('linear prediction', 1234, 20, 20, 1, 10))]
+
+SEED =  1234
+N_INPUT_NEURONS =  20
+N_HIDDEN_NEURONS =  20
+N_INPUT_FEATURES =  10
+N_EPOCHS =  50
+
+naive forecasting loss:  37.17758310518732
+linear regression forecasting loss:  2.0647101402282715
+deep rnn iterative forecasting loss:  21.03489483380226
+deep rnn vector forecasting loss:  20.835968
+deep rnn sequence forecasting loss:  20.85612
+deep rnn lstm sequence forecasting loss:  20.946821
+deep rnn gru sequence forecasting loss:  20.773142
+BEST =  [(1.6869670152664185, ('linear prediction', 1234, 20, 20, 1, 10))]
+
+SEED =  1234
+N_INPUT_NEURONS =  20
+N_HIDDEN_NEURONS =  20
+N_INPUT_FEATURES =  10
+N_EPOCHS =  100
+
+naive forecasting loss:  37.17758310518732
+linear regression forecasting loss:  2.065953016281128
+deep rnn iterative forecasting loss:  21.47452138492855
+deep rnn vector forecasting loss:  20.81116
+deep rnn sequence forecasting loss:  20.80402
+deep rnn lstm sequence forecasting loss:  21.009975
+deep rnn gru sequence forecasting loss:  20.63678
+BEST =  [(1.6869670152664185, ('linear prediction', 1234, 20, 20, 1, 10))]
+
+SEED =  1234
+N_INPUT_NEURONS =  20
+N_HIDDEN_NEURONS =  20
+N_INPUT_FEATURES =  10
+N_EPOCHS =  300
+
+naive forecasting loss:  37.17758310518732
+linear regression forecasting loss:  2.066030502319336
+deep rnn iterative forecasting loss:  21.605021281303127
+deep rnn vector forecasting loss:  21.05669
+deep rnn sequence forecasting loss:  20.618721
+deep rnn lstm sequence forecasting loss:  21.2553
+deep rnn gru sequence forecasting loss:  21.178347
+BEST =  [(1.6869670152664185, ('linear prediction', 1234, 20, 20, 1, 10))]
+
+SEED =  1234
+N_INPUT_NEURONS =  20
+N_HIDDEN_NEURONS =  20
+N_INPUT_FEATURES =  10
+N_EPOCHS =  500
+
+naive forecasting loss:  37.17758310518732
+linear regression forecasting loss:  2.066028356552124
+deep rnn iterative forecasting loss:  21.60494619361909
+deep rnn vector forecasting loss:  21.127972
+deep rnn sequence forecasting loss:  21.564539
+deep rnn lstm sequence forecasting loss:  21.320261
+deep rnn gru sequence forecasting loss:  21.178205
+BEST =  [(1.6869670152664185, ('linear prediction', 1234, 20, 20, 1, 10))]
+
+SEED =  1234
+N_INPUT_NEURONS =  20
+N_HIDDEN_NEURONS =  20
+N_INPUT_FEATURES =  10
+N_EPOCHS =  700
+
+naive forecasting loss:  37.17758310518732
+linear regression forecasting loss:  2.0660228729248047
+deep rnn iterative forecasting loss:  21.605036055138065
+deep rnn vector forecasting loss:  21.141811
+deep rnn sequence forecasting loss:  21.366777
+deep rnn lstm sequence forecasting loss:  21.130276
+deep rnn gru sequence forecasting loss:  20.959415
+BEST =  [(1.6869670152664185, ('linear prediction', 1234, 20, 20, 1, 10))]
+
+SEED =  1234
+N_INPUT_NEURONS =  20
+N_HIDDEN_NEURONS =  20
+N_INPUT_FEATURES =  10
+N_EPOCHS =  900
+
+naive forecasting loss:  37.17758310518732
+linear regression forecasting loss:  2.0660598278045654
+deep rnn iterative forecasting loss:  21.605023961005532
+deep rnn vector forecasting loss:  21.146248
+deep rnn sequence forecasting loss:  21.11649
+deep rnn lstm sequence forecasting loss:  20.866665
+deep rnn gru sequence forecasting loss:  21.316938
+BEST =  [(1.6869670152664185, ('linear prediction', 1234, 20, 20, 1, 10))]
+
+SEED =  1234
+N_INPUT_NEURONS =  20
+N_HIDDEN_NEURONS =  20
+N_INPUT_FEATURES =  10
+N_EPOCHS =  1100
+
+naive forecasting loss:  37.17758310518732
+linear regression forecasting loss:  2.065805673599243
+deep rnn iterative forecasting loss:  21.6048678124916
+deep rnn vector forecasting loss:  21.148102
+deep rnn sequence forecasting loss:  21.714626
+deep rnn lstm sequence forecasting loss:  21.016357
+deep rnn gru sequence forecasting loss:  21.332909
+BEST =  [(1.6869670152664185, ('linear prediction', 1234, 20, 20, 1, 10))]
+
+SEED =  1234
+N_INPUT_NEURONS =  20
+N_HIDDEN_NEURONS =  20
+N_INPUT_FEATURES =  20
+N_EPOCHS =  10
+
+naive forecasting loss:  37.17758310518732
+linear regression forecasting loss:  1.8047046661376953
+deep rnn iterative forecasting loss:  21.509862417970943
+deep rnn vector forecasting loss:  21.134834
+deep rnn sequence forecasting loss:  20.923557
+deep rnn lstm sequence forecasting loss:  20.866798
+deep rnn gru sequence forecasting loss:  20.898895
+BEST =  [(1.6869670152664185, ('linear prediction', 1234, 20, 20, 1, 10))]
+
+SEED =  1234
+N_INPUT_NEURONS =  20
+N_HIDDEN_NEURONS =  20
+N_INPUT_FEATURES =  20
+N_EPOCHS =  50
+
+naive forecasting loss:  37.17758310518732
+linear regression forecasting loss:  1.7867740392684937
+deep rnn iterative forecasting loss:  21.341020985333323
+deep rnn vector forecasting loss:  21.186249
+deep rnn sequence forecasting loss:  20.90065
+deep rnn lstm sequence forecasting loss:  20.712418
+deep rnn gru sequence forecasting loss:  20.73634
+BEST =  [(1.6869670152664185, ('linear prediction', 1234, 20, 20, 1, 10))]
+
+SEED =  1234
+N_INPUT_NEURONS =  20
+N_HIDDEN_NEURONS =  20
+N_INPUT_FEATURES =  20
+N_EPOCHS =  100
+
+naive forecasting loss:  37.17758310518732
+linear regression forecasting loss:  1.787437081336975
+deep rnn iterative forecasting loss:  21.73269290770893
+deep rnn vector forecasting loss:  21.198332
+deep rnn sequence forecasting loss:  20.949512
+deep rnn lstm sequence forecasting loss:  21.062649
+deep rnn gru sequence forecasting loss:  20.611002
+BEST =  [(1.6869670152664185, ('linear prediction', 1234, 20, 20, 1, 10))]
+
+SEED =  1234
+N_INPUT_NEURONS =  20
+N_HIDDEN_NEURONS =  20
+N_INPUT_FEATURES =  20
+N_EPOCHS =  300
+
+naive forecasting loss:  37.17758310518732
+linear regression forecasting loss:  1.7871402502059937
+deep rnn iterative forecasting loss:  21.768271384299172
+deep rnn vector forecasting loss:  21.209091
+deep rnn sequence forecasting loss:  22.16736
+deep rnn lstm sequence forecasting loss:  20.936043
+deep rnn gru sequence forecasting loss:  21.102398
+BEST =  [(1.6869670152664185, ('linear prediction', 1234, 20, 20, 1, 10))]
+
+SEED =  1234
+N_INPUT_NEURONS =  20
+N_HIDDEN_NEURONS =  20
+N_INPUT_FEATURES =  20
+N_EPOCHS =  500
+
+naive forecasting loss:  37.17758310518732
+linear regression forecasting loss:  1.7877660989761353
+deep rnn iterative forecasting loss:  21.767977311991018
+deep rnn vector forecasting loss:  21.252806
+deep rnn sequence forecasting loss:  21.38015
+deep rnn lstm sequence forecasting loss:  21.226389
+deep rnn gru sequence forecasting loss:  20.568535
+BEST =  [(1.6869670152664185, ('linear prediction', 1234, 20, 20, 1, 10))]
+
+SEED =  1234
+N_INPUT_NEURONS =  20
+N_HIDDEN_NEURONS =  20
+N_INPUT_FEATURES =  20
+N_EPOCHS =  700
+
+naive forecasting loss:  37.17758310518732
+linear regression forecasting loss:  1.7875396013259888
+deep rnn iterative forecasting loss:  21.76756411087032
+deep rnn vector forecasting loss:  21.248737
+deep rnn sequence forecasting loss:  21.234398
+deep rnn lstm sequence forecasting loss:  21.156858
+deep rnn gru sequence forecasting loss:  20.862429
+BEST =  [(1.6869670152664185, ('linear prediction', 1234, 20, 20, 1, 10))]
+
+SEED =  1234
+N_INPUT_NEURONS =  20
+N_HIDDEN_NEURONS =  20
+N_INPUT_FEATURES =  20
+N_EPOCHS =  900
+
+naive forecasting loss:  37.17758310518732
+linear regression forecasting loss:  1.787387490272522
+deep rnn iterative forecasting loss:  21.766922349966453
+deep rnn vector forecasting loss:  21.242586
+deep rnn sequence forecasting loss:  21.657564
+deep rnn lstm sequence forecasting loss:  21.447407
+deep rnn gru sequence forecasting loss:  20.646896
+BEST =  [(1.6869670152664185, ('linear prediction', 1234, 20, 20, 1, 10))]
+
+SEED =  1234
+N_INPUT_NEURONS =  20
+N_HIDDEN_NEURONS =  20
+N_INPUT_FEATURES =  20
+N_EPOCHS =  1100
+
+naive forecasting loss:  37.17758310518732
+linear regression forecasting loss:  1.7878552675247192
+deep rnn iterative forecasting loss:  21.767425326975015
+deep rnn vector forecasting loss:  21.226505
+deep rnn sequence forecasting loss:  21.279795
+deep rnn lstm sequence forecasting loss:  21.535028
+deep rnn gru sequence forecasting loss:  20.751827
+BEST =  [(1.6869670152664185, ('linear prediction', 1234, 20, 20, 1, 10))]
+
+SEED =  1234
+N_INPUT_NEURONS =  20
+N_HIDDEN_NEURONS =  20
+N_INPUT_FEATURES =  30
+N_EPOCHS =  10
+
+naive forecasting loss:  37.17758310518732
+linear regression forecasting loss:  1.8397341966629028
+deep rnn iterative forecasting loss:  21.295109030246238
+deep rnn vector forecasting loss:  21.307762
+deep rnn sequence forecasting loss:  20.931803
+deep rnn lstm sequence forecasting loss:  20.931396
+deep rnn gru sequence forecasting loss:  20.928835
+BEST =  [(1.6869670152664185, ('linear prediction', 1234, 20, 20, 1, 10))]
+
+SEED =  1234
+N_INPUT_NEURONS =  20
+N_HIDDEN_NEURONS =  20
+N_INPUT_FEATURES =  30
+N_EPOCHS =  50
+
+naive forecasting loss:  37.17758310518732
+linear regression forecasting loss:  1.8281255960464478
+deep rnn iterative forecasting loss:  21.369038120317615
+deep rnn vector forecasting loss:  21.096567
+deep rnn sequence forecasting loss:  20.864159
+deep rnn lstm sequence forecasting loss:  20.808819
+deep rnn gru sequence forecasting loss:  20.873892
+BEST =  [(1.6869670152664185, ('linear prediction', 1234, 20, 20, 1, 10))]
+
+SEED =  1234
+N_INPUT_NEURONS =  20
+N_HIDDEN_NEURONS =  20
+N_INPUT_FEATURES =  30
+N_EPOCHS =  100
+
+naive forecasting loss:  37.17758310518732
+linear regression forecasting loss:  1.8291072845458984
+deep rnn iterative forecasting loss:  21.625046492146716
+deep rnn vector forecasting loss:  20.99277
+deep rnn sequence forecasting loss:  20.834127
+deep rnn lstm sequence forecasting loss:  20.788433
+deep rnn gru sequence forecasting loss:  20.937418
+BEST =  [(1.6869670152664185, ('linear prediction', 1234, 20, 20, 1, 10))]
+
+SEED =  1234
+N_INPUT_NEURONS =  20
+N_HIDDEN_NEURONS =  20
+N_INPUT_FEATURES =  30
+N_EPOCHS =  300
+
+naive forecasting loss:  37.17758310518732
+linear regression forecasting loss:  1.8290318250656128
+deep rnn iterative forecasting loss:  21.22978282464499
+deep rnn vector forecasting loss:  21.1477
+deep rnn sequence forecasting loss:  21.37895
+deep rnn lstm sequence forecasting loss:  21.042917
+deep rnn gru sequence forecasting loss:  21.05664
+BEST =  [(1.6869670152664185, ('linear prediction', 1234, 20, 20, 1, 10))]
+
+SEED =  1234
+N_INPUT_NEURONS =  20
+N_HIDDEN_NEURONS =  20
+N_INPUT_FEATURES =  30
+N_EPOCHS =  500
+
+naive forecasting loss:  37.17758310518732
+linear regression forecasting loss:  1.829122543334961
+deep rnn iterative forecasting loss:  21.232144528267984
+deep rnn vector forecasting loss:  21.313309
+deep rnn sequence forecasting loss:  21.88354
+deep rnn lstm sequence forecasting loss:  20.786037
+deep rnn gru sequence forecasting loss:  21.15054
+BEST =  [(1.6869670152664185, ('linear prediction', 1234, 20, 20, 1, 10))]
+
+SEED =  1234
+N_INPUT_NEURONS =  20
+N_HIDDEN_NEURONS =  20
+N_INPUT_FEATURES =  30
+N_EPOCHS =  700
+
+naive forecasting loss:  37.17758310518732
+linear regression forecasting loss:  1.8288315534591675
+deep rnn iterative forecasting loss:  21.23327507817217
+deep rnn vector forecasting loss:  21.34333
+deep rnn sequence forecasting loss:  21.526676
+deep rnn lstm sequence forecasting loss:  21.032137
+deep rnn gru sequence forecasting loss:  21.208595
+BEST =  [(1.6869670152664185, ('linear prediction', 1234, 20, 20, 1, 10))]
+
+SEED =  1234
+N_INPUT_NEURONS =  20
+N_HIDDEN_NEURONS =  20
+N_INPUT_FEATURES =  30
+N_EPOCHS =  900
+
+naive forecasting loss:  37.17758310518732
+linear regression forecasting loss:  1.8287005424499512
+deep rnn iterative forecasting loss:  21.23179277586598
+deep rnn vector forecasting loss:  21.32856
+deep rnn sequence forecasting loss:  21.598993
+deep rnn lstm sequence forecasting loss:  21.024218
+deep rnn gru sequence forecasting loss:  21.154392
+BEST =  [(1.6869670152664185, ('linear prediction', 1234, 20, 20, 1, 10))]
+
+SEED =  1234
+N_INPUT_NEURONS =  20
+N_HIDDEN_NEURONS =  20
+N_INPUT_FEATURES =  30
+N_EPOCHS =  1100
+
+naive forecasting loss:  37.17758310518732
+linear regression forecasting loss:  1.828407883644104
+deep rnn iterative forecasting loss:  21.231219701159635
+deep rnn vector forecasting loss:  21.321747
+deep rnn sequence forecasting loss:  20.703033
+deep rnn lstm sequence forecasting loss:  20.99814
+deep rnn gru sequence forecasting loss:  21.004093
+BEST =  [(1.6869670152664185, ('linear prediction', 1234, 20, 20, 1, 10))]
+
+SEED =  1234
+N_INPUT_NEURONS =  20
+N_HIDDEN_NEURONS =  20
+N_INPUT_FEATURES =  40
+N_EPOCHS =  10
+
+naive forecasting loss:  37.17758310518732
+linear regression forecasting loss:  1.633013367652893
+deep rnn iterative forecasting loss:  21.785481117675495
+deep rnn vector forecasting loss:  21.018446
+deep rnn sequence forecasting loss:  20.91454
+deep rnn lstm sequence forecasting loss:  20.883833
+deep rnn gru sequence forecasting loss:  21.016367
+BEST =  [(1.633013367652893, ('linear prediction', 1234, 20, 20, 40, 10))]
+
+SEED =  1234
+N_INPUT_NEURONS =  20
+N_HIDDEN_NEURONS =  20
+N_INPUT_FEATURES =  40
+N_EPOCHS =  50
+
+naive forecasting loss:  37.17758310518732
+linear regression forecasting loss:  1.6234326362609863
+deep rnn iterative forecasting loss:  21.6189314002211
+deep rnn vector forecasting loss:  20.761248
+deep rnn sequence forecasting loss:  20.759388
+deep rnn lstm sequence forecasting loss:  21.056873
+deep rnn gru sequence forecasting loss:  20.95024
+BEST =  [(1.6234326362609863, ('linear prediction', 1234, 20, 20, 40, 50))]
+
+SEED =  1234
+N_INPUT_NEURONS =  20
+N_HIDDEN_NEURONS =  20
+N_INPUT_FEATURES =  40
+N_EPOCHS =  100
+
+naive forecasting loss:  37.17758310518732
+linear regression forecasting loss:  1.6215022802352905
+deep rnn iterative forecasting loss:  21.300982494797186
+deep rnn vector forecasting loss:  20.71107
+deep rnn sequence forecasting loss:  21.055126
+deep rnn lstm sequence forecasting loss:  20.984829
+deep rnn gru sequence forecasting loss:  21.021904
+BEST =  [(1.6215022802352905, ('linear prediction', 1234, 20, 20, 40, 100))]
+
+SEED =  1234
+N_INPUT_NEURONS =  20
+N_HIDDEN_NEURONS =  20
+N_INPUT_FEATURES =  40
+N_EPOCHS =  300
+
+naive forecasting loss:  37.17758310518732
+linear regression forecasting loss:  1.6214042901992798
+deep rnn iterative forecasting loss:  21.443485539545406
+deep rnn vector forecasting loss:  20.887451
+deep rnn sequence forecasting loss:  21.279547
+deep rnn lstm sequence forecasting loss:  20.931229
+deep rnn gru sequence forecasting loss:  21.53194
+BEST =  [(1.6214042901992798, ('linear prediction', 1234, 20, 20, 40, 300))]
+
+SEED =  1234
+N_INPUT_NEURONS =  20
+N_HIDDEN_NEURONS =  20
+N_INPUT_FEATURES =  40
+N_EPOCHS =  500
+
+naive forecasting loss:  37.17758310518732
+linear regression forecasting loss:  1.6214160919189453
+deep rnn iterative forecasting loss:  21.423090008347074
+deep rnn vector forecasting loss:  21.046715
+deep rnn sequence forecasting loss:  21.075338
+deep rnn lstm sequence forecasting loss:  21.034489
+deep rnn gru sequence forecasting loss:  21.252552
+BEST =  [(1.6214042901992798, ('linear prediction', 1234, 20, 20, 40, 300))]
+
+SEED =  1234
+N_INPUT_NEURONS =  20
+N_HIDDEN_NEURONS =  20
+N_INPUT_FEATURES =  40
+N_EPOCHS =  700
+
+naive forecasting loss:  37.17758310518732
+linear regression forecasting loss:  1.6217344999313354
+deep rnn iterative forecasting loss:  21.436753243297748
+deep rnn vector forecasting loss:  21.1052
+deep rnn sequence forecasting loss:  21.574743
+deep rnn lstm sequence forecasting loss:  21.317995
+deep rnn gru sequence forecasting loss:  21.155352
+BEST =  [(1.6214042901992798, ('linear prediction', 1234, 20, 20, 40, 300))]
+
+SEED =  1234
+N_INPUT_NEURONS =  20
+N_HIDDEN_NEURONS =  20
+N_INPUT_FEATURES =  40
+N_EPOCHS =  900
+
+naive forecasting loss:  37.17758310518732
+linear regression forecasting loss:  1.6216773986816406
+deep rnn iterative forecasting loss:  21.458725686256564
+deep rnn vector forecasting loss:  21.12719
+deep rnn sequence forecasting loss:  21.29904
+deep rnn lstm sequence forecasting loss:  21.076864
+deep rnn gru sequence forecasting loss:  21.299845
+BEST =  [(1.6214042901992798, ('linear prediction', 1234, 20, 20, 40, 300))]
+
+SEED =  1234
+N_INPUT_NEURONS =  20
+N_HIDDEN_NEURONS =  20
+N_INPUT_FEATURES =  40
+N_EPOCHS =  1100
+
+naive forecasting loss:  37.17758310518732
+linear regression forecasting loss:  1.6219844818115234
+deep rnn iterative forecasting loss:  21.437603867423732
+deep rnn vector forecasting loss:  21.136694
+deep rnn sequence forecasting loss:  21.874687
+deep rnn lstm sequence forecasting loss:  20.987118
+deep rnn gru sequence forecasting loss:  21.168839
+BEST =  [(1.6214042901992798, ('linear prediction', 1234, 20, 20, 40, 300))]
+
+SEED =  1234
+N_INPUT_NEURONS =  20
+N_HIDDEN_NEURONS =  20
+N_INPUT_FEATURES =  50
+N_EPOCHS =  10
+
+naive forecasting loss:  37.17758310518732
+linear regression forecasting loss:  86646972219392.0
+deep rnn iterative forecasting loss:  21.890614690296783
+deep rnn vector forecasting loss:  20.811644
+deep rnn sequence forecasting loss:  20.982412
+deep rnn lstm sequence forecasting loss:  20.917202
+deep rnn gru sequence forecasting loss:  20.904322
+BEST =  [(1.6214042901992798, ('linear prediction', 1234, 20, 20, 40, 300))]
