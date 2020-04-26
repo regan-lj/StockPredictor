@@ -4,7 +4,7 @@
 
 `stockData.py` -> The collection of data from yFinance<br/>
 `data_preprocess.py` -> Getting rid of seasonality<br/>
-`best_model'/'lin_model.py` -> The saved model and the script with the hyper-parameters configured to create it <br/>
+`best_model'/'lin_model.py` -> The saved model / a script with the hyper-parameters configured to train and test this model (the trained model may differ on different machines due to pseudorandom component) <br/>
 `buy_sell.py` -> The generation of buy/sell signals<br/>
 `benchMark.py` -> Creation of the benchmark buy/sell signals<br/>
 `evaluation.py` -> Comparison of our neural network with the original data and benchmark<br/>
