@@ -4,6 +4,7 @@ from datetime import date, timedelta
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+from buysell import actual_results_MAIN as actual_results
 from buysell import prediction
 from benchMark import orders as benchmarkOrders
 from buysell import orders as mlOrders # Machine Learning Buy Sell Output
@@ -15,7 +16,7 @@ print(mlOrders)
 
 principal = 10000
 
-portfolioValues = pd.DataFrame({'Price': prediction})
+portfolioValues = pd.DataFrame({'Price': actual_results})
 print(portfolioValues)
 
 benchmarkShares = 0
@@ -68,20 +69,34 @@ price_norm = portfolioValues['Price'] / portfolioValues['Price'].iloc[0]
 benchmark_norm = portfolioValues['Benchmark'] / portfolioValues['Benchmark'].iloc[0]
 ml_norm = portfolioValues['ML'] / portfolioValues['ML'].iloc[0]
 
-# plt.figure()
-# plt.style.use('seaborn-whitegrid')
-# plt.plot(price_norm, label="Stock Price")
-# plt.plot(benchmark_norm, label="Benchmark")
-# plt.plot(ml_norm, label="ML Algorithm")
-# plt.legend(frameon=True, loc=0, ncol=1, fontsize=10, borderpad=.6)
-# plt.title("Portfolio Growth (Stock vs Benchmark vs ML Algorithm")
-# plt.ylabel("Normalized Portfolio Value")
-# plt.xlabel("Date Index")
-# plt.xlim([portfolioValues.index.min(), portfolioValues.index.max()])
-# plt.show()
-
 buysML = mlOrders[mlOrders['Order'] == 'BUY']
 sellsML = mlOrders[mlOrders['Order'] == 'SELL']
+
+plt.figure()
+plt.style.use('seaborn-whitegrid')
+plt.plot(prediction, label="Prediction")
+plt.plot(actual_results, label="Actual Data")
+plt.scatter(buysML.Day, buysML.Price, c='#4bd81d', label='Buy Point')
+plt.scatter(sellsML.Day, sellsML.Price, c='#ff001e', label='Sell Point')
+plt.legend(frameon=True, loc=0, ncol=1, fontsize=10, borderpad=.6)
+plt.title("Prediction vs Actual Data")
+plt.ylabel("Stock Price ($)")
+plt.xlabel("Date Index")
+plt.xlim([0, len(prediction) - 1])
+plt.show()
+
+plt.figure()
+plt.style.use('seaborn-whitegrid')
+plt.plot(price_norm, label="Stock Price")
+plt.plot(benchmark_norm, label="Benchmark")
+plt.plot(ml_norm, label="ML Algorithm")
+plt.legend(frameon=True, loc=0, ncol=1, fontsize=10, borderpad=.6)
+plt.title("Portfolio Growth (Stock vs Benchmark vs ML Algorithm")
+plt.ylabel("Normalized Portfolio Value")
+plt.xlabel("Date Index")
+plt.xlim([portfolioValues.index.min(), portfolioValues.index.max()])
+plt.show()
+
 
 plt.figure()
 plt.style.use('seaborn-whitegrid')
