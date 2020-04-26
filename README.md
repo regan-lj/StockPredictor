@@ -11,7 +11,7 @@
 
 #### Testing:
 
-`trained_model_outputs/` -> Contains excerpts from the GPUs where models were trained with different hyper-parameters and their loss on the testing data was printed; validation loss and training loss were rarely close on our data, so the number of epochs was also trialled as a hyper-parameter <br/>
+`trained_model_outputs/` -> Contains excerpts from the GPUs where models were trained with different hyper-parameters and their loss on the testing data was printed; validation loss and training loss were rarely close on our data, so the number of epochs was also tuned as a hyper-parameter <br/>
 `model_results.txt` -> The predictions from the best model <br/>
 `Evaluation Results` -> The practical evaluation using the benchmark as a comparison<br/>
 
