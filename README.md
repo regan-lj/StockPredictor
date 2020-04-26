@@ -18,6 +18,7 @@
 #### Other files:
 
 `chapter-15_demo_code*.py` -> Built upon the ideas in Chapter 15: Processing Sequences Using RNNs and CNNs<br/>
-`deep_learning_script*.py` -> The neural network at the time of the presentation<br/>
+`deep_learning_script*.py` -> The training script at the time of the presentation <br/>
+`deep_learning_RNN.py` -> The most recent training script, focused on tuning RNN hyper-parameters <br/>
 `dynamic_buysell.py` -> Altered buysell that is able to generate signals on a rolling basis<br/>
 `evaluationScript.py` -> Preliminary method of creating a benchmark<br/>
